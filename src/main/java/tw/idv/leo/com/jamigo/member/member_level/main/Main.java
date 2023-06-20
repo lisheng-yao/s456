@@ -2,10 +2,9 @@ package tw.idv.leo.com.jamigo.member.member_level.main;
 
 
 
-import org.springframework.beans.factory.annotation.Autowired;
+
 import org.springframework.stereotype.Component;
 
-import tw.idv.leo.com.jamigo.member.member_level.dao.MemberLevelDetailDAO;
 
 
 
@@ -13,8 +12,7 @@ import tw.idv.leo.com.jamigo.member.member_level.dao.MemberLevelDetailDAO;
 @Component
 public class Main {
 	
-	 @Autowired
-	 private MemberLevelDetailDAO memberLevelDetailDAO;
+
 
 //	@Override
 //	public void run (String... args) {
