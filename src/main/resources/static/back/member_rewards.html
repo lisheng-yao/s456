@@ -331,27 +331,99 @@
         <!-- 網頁內容主體 -->
         <div class="col-10 page-body">
           <div class="col-12">
-            <button type="button" class="btn btn-outline-primary">
-              新增會員等級 ➕
-            </button>
+            <h2 class="mb-3 fw-bold">會員等級回饋管理</h2>
+            <!-- 新增燈箱彈跳 -->
+            <div>
+              <button
+                type="button"
+                class="btn btn-success fw-bold modal-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#exampleModal"
+                data-bs-whatever="@mdo"
+              >
+                新增會員等級
+              </button>
+              <div
+                class="modal fade"
+                id="exampleModal"
+                tabindex="-1"
+                aria-labelledby="exampleModalLabel"
+                aria-hidden="true"
+              >
+                <div class="modal-dialog">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h1 class="modal-title fs-5" id="exampleModalLabel">
+                        新增會員等級
+                      </h1>
+                      <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                      ></button>
+                    </div>
+                    <div class="modal-body">
+                      <form>
+                        <div class="mb-3">
+                          <label for="add-name" class="col-form-label"
+                            >會員等級名稱</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="add-name"
+                            name="name"
+                          />
+                        </div>
+                        <div class="mb-3">
+                          <label for="add-feedback" class="col-form-label"
+                            >點數回饋倍率</label
+                          >
+                          <input
+                            type="text"
+                            class="form-control"
+                            id="add-feedback"
+                            name="feedback"
+                          />
+                        </div>
+                      </form>
+                    </div>
+                    <div class="modal-footer">
+                      <button
+                        type="button"
+                        class="btn btn-secondary"
+                        data-bs-dismiss="modal"
+                      >
+                        Close
+                      </button>
+                      <button
+                        type="button"
+                        class="btn btn-primary"
+                        onclick="addLevel()"
+                      >
+                        確認新增
+                      </button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
             <div class="bg-light rounded h-100 p-4">
-              <h2 class="mb-3 fw-bold">會員等級回饋管理</h2>
               <div class="table-responsive">
                 <table class="table">
                   <thead>
                     <tr class="p-2 mb-2 bg-primary text-white border border-1">
                       <th scope="col">#</th>
                       <th scope="col">會員等級</th>
-                      <th scope="col">升等門檻</th>
                       <th scope="col">點數回饋倍率</th>
-                      <th scope="col">Country</th>
+                      <th scope="col">修改名稱 / 回饋</th>
                     </tr>
                   </thead>
-                  <tbody>
+                  <tbody id="table-body">
                     <tr class="border border-1">
                       <th scope="row">1</th>
                       <td>鑽石</td>
-                      <td>10000</td>
                       <td>
                         <select
                           class="form-select"
@@ -443,181 +515,9 @@
                         </div>
                       </td>
                     </tr>
-                    <tr class="border border-1">
-                      <th scope="row">2</th>
-                      <td>金級</td>
-                      <td>1000</td>
-                      <td>2倍</td>
-                      <td>
-                        <!-- 修改燈箱彈跳 -->
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
-                          data-bs-whatever="@mdo"
-                        >
-                          修改
-                        </button>
-                        <div
-                          class="modal fade"
-                          id="exampleModal"
-                          tabindex="-1"
-                          aria-labelledby="exampleModalLabel"
-                          aria-hidden="true"
-                        >
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1
-                                  class="modal-title fs-5"
-                                  id="exampleModalLabel"
-                                >
-                                  修改優惠
-                                </h1>
-                                <button
-                                  type="button"
-                                  class="btn-close"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"
-                                ></button>
-                              </div>
-                              <div class="modal-body">
-                                <form>
-                                  <div class="mb-3">
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >修改升等門檻</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div class="mb-3">
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >修改點數回饋倍率</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button
-                                  type="button"
-                                  class="btn btn-secondary"
-                                  data-bs-dismiss="modal"
-                                >
-                                  取消
-                                </button>
-                                <button type="button" class="btn btn-primary">
-                                  確認修改
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
-                    <tr class="border border-1">
-                      <th scope="row">3</th>
-                      <td>銀級</td>
-                      <td>-</td>
-                      <td>1倍</td>
-                      <td>
-                        <!-- 修改燈箱彈跳 -->
-                        <button
-                          type="button"
-                          class="btn btn-primary"
-                          data-bs-toggle="modal"
-                          data-bs-target="#exampleModal"
-                          data-bs-whatever="@mdo"
-                        >
-                          修改
-                        </button>
-                        <div
-                          class="modal fade"
-                          id="exampleModal"
-                          tabindex="-1"
-                          aria-labelledby="exampleModalLabel"
-                          aria-hidden="true"
-                        >
-                          <div class="modal-dialog">
-                            <div class="modal-content">
-                              <div class="modal-header">
-                                <h1
-                                  class="modal-title fs-5"
-                                  id="exampleModalLabel"
-                                >
-                                  修改優惠
-                                </h1>
-                                <button
-                                  type="button"
-                                  class="btn-close"
-                                  data-bs-dismiss="modal"
-                                  aria-label="Close"
-                                ></button>
-                              </div>
-                              <div class="modal-body">
-                                <form>
-                                  <div class="mb-3">
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >修改升等門檻</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                  <div class="mb-3">
-                                    <label
-                                      for="recipient-name"
-                                      class="col-form-label"
-                                      >修改點數回饋倍率</label
-                                    >
-                                    <input
-                                      type="text"
-                                      class="form-control"
-                                      id="recipient-name"
-                                    />
-                                  </div>
-                                </form>
-                              </div>
-                              <div class="modal-footer">
-                                <button
-                                  type="button"
-                                  class="btn btn-secondary"
-                                  data-bs-dismiss="modal"
-                                >
-                                  取消
-                                </button>
-                                <button type="button" class="btn btn-primary">
-                                  確認修改
-                                </button>
-                              </div>
-                            </div>
-                          </div>
-                        </div>
-                      </td>
-                    </tr>
                   </tbody>
                 </table>
               </div>
-              <button type="submit" class="btn btn-outline-success">
-                儲存
-              </button>
-              <button type="button" class="btn btn-outline-danger">取消</button>
             </div>
           </div>
         </div>
@@ -630,6 +530,9 @@
       integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
       crossorigin="anonymous"
     ></script>
+
+    <!-- 引入sweetalert CDN -->
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     <!-- 新引入的JS檔案或套件請由此往下放 -->
 
@@ -649,6 +552,208 @@
       const tooltipList = [...tooltipTriggerList].map(
         (tooltipTriggerEl) => new bootstrap.Tooltip(tooltipTriggerEl)
       );
+    </script>
+
+    <!-------------------------------------- 取得所有資訊 ---------------------------------->
+    <script>
+      // 載入印出
+      window.onload = function () {
+        getData();
+      };
+
+      function getData() {
+        fetch("/Jamigo/memberLevelDetail")
+          .then((response) => response.json())
+          .then((data) => {
+            console.log(data);
+            const dataRow = document.getElementById("table-body");
+
+            dataRow.innerHTML = "";
+
+            // 輸出每個輪播資料
+            data.forEach((mlevel) => {
+              const no = mlevel.levelNo;
+              const name = mlevel.levelName;
+              const feedback = mlevel.levelFeedback;
+
+              const trElement = document.createElement("tr");
+              trElement.innerHTML = `
+                    <td>${no}</td>
+                    <td>${name}</td>
+                    <td>${feedback} 倍</td>
+                    <td>
+                      <button
+                          type="button"
+                          class="btn btn-primary"
+                          data-bs-toggle="modal"
+                          data-bs-target="#exampleModal${no}"
+                          data-bs-whatever="@mdo"
+                        >
+                        詳細資料 / 修改
+                        </button>
+                        <div
+                          class="modal fade"
+                          id="exampleModal${no}"
+                          tabindex="-1"
+                          aria-labelledby="exampleModalLabel"
+                          aria-hidden="true"
+                        >
+                          <div class="modal-dialog">
+                            <div class="modal-content">
+                              <div class="modal-header">
+                                <h5 class="modal-title" id="exampleModalLabel">
+                                  修改等級回饋
+                                </h5>
+                                <button
+                                  type="button"
+                                  class="btn-close"
+                                  data-bs-dismiss="modal"
+                                  aria-label="Close"
+                                ></button>
+                              </div>
+                              <div class="modal-body">
+                                <form>
+                                  <input type="hidden"
+                                   id="update-no-${no}" 
+                                   value="${no}">
+                                  <div class="mb-3">
+                                    <label
+                                      for="update-name-${no}"
+                                      class="col-form-label"
+                                      >會員等級</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="update-name-${no}"
+                                      value="${name}"
+                                    />
+                                  </div>
+                                  <div class="mb-3">
+                                    <label
+                                      for="recipient-feedback-${no}"
+                                      class="col-form-label"
+                                      >點數回饋倍率</label
+                                    >
+                                    <input
+                                      type="text"
+                                      class="form-control"
+                                      id="update-feedback-${no}"
+                                      value="${feedback}"
+                                    />
+                                  </div>
+                                </form>
+                              </div>
+                              <div class="modal-footer">
+                                <button
+                                  type="button"
+                                  class="btn btn-secondary"
+                                  data-bs-dismiss="modal"
+                                >
+                                  Close
+                                </button>
+                                <button type="button" class="btn btn-primary" onclick="updateLevel(${no})">
+                                  確認修改
+                                </button>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                    </td>
+                    `;
+              var tableBody = document.getElementById("table-body");
+              tableBody.appendChild(trElement);
+            });
+          })
+          .catch((error) => {
+            // 處理錯誤
+            console.error("Error:", error);
+          });
+      }
+    </script>
+
+    <!-------------------------------------- 新增會員等級 ---------------------------------->
+
+    <script>
+      function addLevel() {
+        const name = document.getElementById("add-name").value;
+        const feedback = document.getElementById("add-feedback").value;
+
+        const data = {
+          levelName: name,
+          levelFeedback: feedback,
+        };
+
+        // 發送 POST 請求
+        fetch("/Jamigo/addLevel", {
+          method: "POST",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => response.json())
+          .then((responseData) => {
+            Swal.fire("新增完成", "你很棒唉!", "success")
+              .then(() => {
+                // 清空表單
+                document.getElementById("add-name").value = "";
+                document.getElementById("add-feedback").value = "";
+              })
+              .then(() => {
+                location.reload();
+              });
+          })
+          .catch((error) => {
+            // 處理錯誤
+            console.error("Error:", error);
+          });
+      }
+    </script>
+
+    <!-------------------------------------- 修改會員等級 ---------------------------------->
+    <script>
+      function updateLevel(levelId) {
+        const no = document.getElementById(`update-no-${levelId}`).value;
+        const name = document.getElementById(`update-name-${levelId}`).value;
+        const feedback = document.getElementById(
+          `update-feedback-${levelId}`
+        ).value;
+
+        const data = {
+          levelNo: no,
+          levelName: name,
+          levelFeedback: feedback,
+        };
+
+        console.log(data);
+
+        fetch(`/Jamigo/update/${no}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.text();
+            } else {
+              throw new Error("Level update failed");
+              return;
+            }
+          })
+          .then((responseData) => {
+            console.log(responseData);
+            Swal.fire("修改完成", "你很棒唉!", "success").then(() => {
+              location.reload();
+            });
+            // location.reload();
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
     </script>
   </body>
 </html>

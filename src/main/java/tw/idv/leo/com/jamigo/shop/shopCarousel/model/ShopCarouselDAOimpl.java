@@ -1,4 +1,4 @@
-package com.shop.model;
+package tw.idv.leo.com.jamigo.shop.shopCarousel.model;
 
 import java.util.List;
 
@@ -6,24 +6,28 @@ import javax.naming.InitialContext;
 import javax.naming.NamingException;
 import javax.sql.DataSource;
 
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Repository;
+
 import java.sql.Connection;
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 
+@Repository
 public class ShopCarouselDAOimpl implements ShopCarouselDAO {
+	@Autowired
+	private DataSource ds;
 
-	private static DataSource ds = null;
-
-	static {
-		try {
-			InitialContext ctx = new InitialContext();
-			ds = (DataSource) ctx.lookup("java:comp/env/jdbc/jamigo");
-		} catch (NamingException e) {
-			e.printStackTrace();
-		}
-	}
+//	static {
+//		try {
+//			InitialContext ctx = new InitialContext();
+//			ds = (DataSource) ctx.lookup("java:comp/env/jdbc/jamigo");
+//		} catch (NamingException e) {
+//			e.printStackTrace();
+//		}
+//	}
 
 	private static final String GET_ALL_STMT = "SELECT shopCarouselNo,shopCarouselTitle,shopCarouselText,shopCarouselStartTime,shopCarouselEndTime,shopCarouselState,shopCarouselUrl FROM shop_carousel";
 	private static final String INSERT_STMT = "INSERT INTO shop_carousel (shopCarouselTitle,shopCarouselText,shopCarouselPic,shopCarouselStartTime,shopCarouselEndTime,shopCarouselState,shopCarouselUrl) VALUES (?, ?, ?, ?, ?,?,?)";

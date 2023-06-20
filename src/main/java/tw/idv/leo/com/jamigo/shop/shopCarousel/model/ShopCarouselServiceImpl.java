@@ -1,23 +1,29 @@
-package com.shop.model;
+package tw.idv.leo.com.jamigo.shop.shopCarousel.model;
 
 import java.sql.Date;
 import java.util.List;
 
-public class ShopCarouselService {
-	
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Service;
+
+@Service
+public class ShopCarouselServiceImpl implements ShopCarouselService {
+	@Autowired
 	private ShopCarouselDAO dao;
 	
-	public ShopCarouselService() {
-        dao = new ShopCarouselDAOimpl();
-    }
+//	public ShopCarouselService() {
+//        dao = new ShopCarouselDAOimpl();
+//    }
 	
 //	================== 查所有 ======================
+	@Override
 	public List<ShopCarouselVO> getAll() {
         return dao.getAll();
     }
 	
 	
 //	================== 新增 ======================
+	@Override
 	public ShopCarouselVO addCarousel(String shopCarouselTitle,String shopCarouselText,
 									byte[] shopCarouselPic,Date shopCarouselStartTime,Date shopCarouselEndTime,
 									Integer shopCarouselState, String shopCarouselUrl) {
@@ -38,6 +44,7 @@ public class ShopCarouselService {
 
 //	================== 查單一 ======================	
 	
+	@Override
 	public ShopCarouselVO getOneShopCarousel(Integer ShopCarouselNo) {
 		return dao.findByPrimaryKey(ShopCarouselNo);
 	}
@@ -45,6 +52,7 @@ public class ShopCarouselService {
 	
 //	================== 更新 ======================		
 	
+	@Override
 	public void updateShopCarousel(Integer shopCarouselNo,String shopCarouselTitle,String shopCarouselText,
 			byte[] shopCarouselPic,Date shopCarouselStartTime,Date shopCarouselEndTime,
 			Integer shopCarouselState, String shopCarouselUrl) {

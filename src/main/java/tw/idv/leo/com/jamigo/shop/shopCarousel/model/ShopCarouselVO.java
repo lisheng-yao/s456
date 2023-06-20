@@ -1,4 +1,4 @@
-package com.shop.model;
+package tw.idv.leo.com.jamigo.shop.shopCarousel.model;
 
 import java.sql.Date;
 

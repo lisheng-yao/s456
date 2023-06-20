@@ -9,12 +9,12 @@
 		<version>2.7.12</version>
 		<relativePath /> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>com.jamigo</groupId>
-	<artifactId>CHA101G4-Jamigo</artifactId>
+	<groupId>tw.idv.leo</groupId>
+	<artifactId>s456</artifactId>
 	<version>0.0.1-SNAPSHOT</version>
 	<packaging>war</packaging>
-	<name>CHA101G4-Jamigo</name>
-	<description>CHA101G4-Jamigo</description>
+	<name>tw.idv.leo</name>
+	<description>tw.idv.leo</description>
 	<properties>
 		<java.version>11</java.version>
 	</properties>
