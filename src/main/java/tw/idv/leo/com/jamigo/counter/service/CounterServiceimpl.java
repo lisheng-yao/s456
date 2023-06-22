@@ -54,6 +54,7 @@ public class CounterServiceimpl implements CounterService {
 		return counterRepository.findByCounterAccountAndCounterPassword(counterAccount, counterPassword);
 		
 		
+
 	}
 
 }

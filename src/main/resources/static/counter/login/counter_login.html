@@ -87,6 +87,17 @@
               <button type="button" class="btn" id="btn1" onclick="login()">
                 登入
               </button>
+              <p
+                id="login-error"
+                style="
+                  color: red;
+                  display: none;
+                  margin-left: 80px;
+                  margin-top: 30px;
+                "
+              >
+                登入失敗，帳號或密碼錯誤
+              </p>
             </div>
             <ul class="list-login">
               <li>
@@ -168,7 +179,7 @@
         .then((response) => {
           if (response.ok)
             window.location.href = "/Jamigo/counter/counter_data.html";
-          else console.log("????????");
+          else document.getElementById("login-error").style.display = "block";
         })
         .catch((error) => console.log("錯誤"));
     }

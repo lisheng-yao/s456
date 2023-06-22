@@ -313,80 +313,74 @@
                 <tbody id="table-body">
                   <tr>
                     <th scope="row">編號</th>
-                    <td>1</td>
+                    <td id="counterNo"></td>
                   </tr>
                   <tr>
                     <th scope="row">櫃位名稱</th>
-                    <td>Dior</td>
+                    <td id="counterName"></td>
                   </tr>
                   <tr>
                     <th scope="row">抽成比例</th>
-                    <td>0.3</td>
+                    <td id="cutPercent"></td>
                   </tr>
                   <tr>
                     <th scope="row">帳號</th>
-                    <td>a001</td>
+                    <td id="counterAccount"></td>
                   </tr>
                   <tr>
                     <th scope="row">狀態</th>
-                    <td>啟用</td>
+                    <td id="counterStat"></td>
                   </tr>
                   <tr>
                     <th scope="row">統編</th>
-                    <td>11111111</td>
+                    <td id="counterGui"></td>
                   </tr>
                   <tr>
                     <th scope="row">樓層</th>
-                    <td>1</td>
+                    <td id="counterFloor"></td>
                   </tr>
                   <tr>
                     <th scope="row">櫃位電話</th>
-                    <td>034251108</td>
+                    <td id="counterTel"></td>
                   </tr>
                   <tr>
                     <th scope="row">聯絡人</th>
-                    <td>小吳</td>
+                    <td id="counterPoc"></td>
                   </tr>
                   <tr>
                     <th scope="row">聯絡電話</th>
-                    <td>034251108</td>
+                    <td id="counterPocPhone"></td>
                   </tr>
                   <tr>
                     <th scope="row">聯絡地址</th>
-                    <td>320桃園市中壢區復興路46號1樓</td>
+                    <td id="counterPocAddress"></td>
                   </tr>
                   <tr>
                     <th scope="row">信箱</th>
-                    <td>example1@gmail.com</td>
+                    <td id="counterEmail"></td>
                   </tr>
                   <tr>
                     <th scope="row">轉帳</th>
-                    <td>123456789</td>
+                    <td id="counterBankAccount"></td>
                   </tr>
                   <tr>
                     <th scope="row">被檢舉成功次數</th>
-                    <td>1</td>
+                    <td id="counterReportCount"></td>
                   </tr>
                   <tr>
                     <th scope="row">關於我們</th>
-                    <td>
-                      在Dior櫃位，璀璨的光芒映照著奢華與時尚的交匯。鏡面的反射中，展示著Dior經典的高級時裝與精緻的配飾。每一件設計都彰顯著卓越的工藝與創新的靈感。專業的顧問們以溫暖微笑迎接每一位顧客，細緻地傾聽他們的需求，並提供專業的時尚建議。這個櫃位散發著奢華、品味和自信，為每一位走進來的人帶來了獨特的時尚體驗，讓他們盡情展現個人的魅力與風格。
-                    </td>
+                    <td id="counterAbout"></td>
                   </tr>
                   <tr>
                     <th scope="row">櫃位頭貼</th>
-                    <td>
-                      <div class="detail-controll-table-img col-2">
-                        <img src="./images/logo-dior_mobile_share.jpg" alt="" />
-                      </div>
-                    </td>
+                    <td id="counterPic"></td>
                   </tr>
                 </tbody>
               </table>
-              <div class="button-group mt-3">
-                <a href="#" class="btn revise-btn btn-outline-primary">修改</a>
-                <a href="#" class="btn btn-outline-secondary ml-2">返回總覽</a>
-              </div>
+            </div>
+            <div class="button-group mt-3">
+              <a href="#" class="btn revise-btn btn-outline-primary">修改</a>
+              <a href="#" class="btn btn-outline-secondary ml-2">返回總覽</a>
             </div>
           </div>
         </div>
@@ -421,6 +415,50 @@
     </script>
 
     <!-------------------------------------- 取得所有資訊 ---------------------------------->
+
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        fetch("/Jamigo/counter/counterAcc")
+          .then((response) => response.json())
+          .then((data) => {
+            document.getElementById("counterNo").textContent = data.counterNo;
+            document.getElementById("counterName").textContent =
+              data.counterName;
+            document.getElementById("cutPercent").textContent = data.cutPercent;
+            document.getElementById("counterAccount").textContent =
+              data.counterAccount;
+            document.getElementById("counterStat").textContent =
+              data.counterStat === 1 ? "啟用" : "停用";
+            document.getElementById("counterGui").textContent = data.counterGui;
+            document.getElementById("counterFloor").textContent =
+              data.counterFloor;
+            document.getElementById("counterTel").textContent = data.counterTel;
+            document.getElementById("counterPoc").textContent = data.counterPoc;
+            document.getElementById("counterPocPhone").textContent =
+              data.counterPocPhone;
+            document.getElementById("counterPocAddress").textContent =
+              data.counterPocAddress;
+            document.getElementById("counterEmail").textContent =
+              data.counterEmail;
+            document.getElementById("counterBankAccount").textContent =
+              data.counterBankAccount;
+            document.getElementById("counterReportCount").textContent =
+              data.counterReportCount;
+            document.getElementById("counterAbout").textContent =
+              data.counterAbout;
+            if (data.counterPic) {
+              const img = document.createElement("img");
+              img.src = data.counterPic;
+              img.alt = "";
+              img.classList.add("detail-controll-table-img", "col-2");
+              document.getElementById("counterPic").appendChild(img);
+            }
+          })
+          .catch((error) => console.log("錯誤:", error));
+      });
+    </script>
+
+    <!-- ====================================================================== -->
     <script>
       // 載入印出
       window.onload = function () {
