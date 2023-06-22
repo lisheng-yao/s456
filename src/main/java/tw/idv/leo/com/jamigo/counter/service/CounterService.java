@@ -7,5 +7,7 @@ public interface CounterService {
 	void updateCounter(Counter counter);
 	
 	Counter getCounterByCounterNo(Integer counterNo);
+	
+	Counter findByAcc(String counterAccount , String counterPassword);
 
 }

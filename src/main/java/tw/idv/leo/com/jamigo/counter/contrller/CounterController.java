@@ -5,6 +5,7 @@ package tw.idv.leo.com.jamigo.counter.contrller;
 import java.util.Optional;
 
 import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -55,20 +56,36 @@ public class CounterController {
 		}
 	
 	// ========================== 櫃位登入 ==========================
-	
+	 
 	@PostMapping("/login")
 	public ResponseEntity<String> login(@RequestBody Counter counter, HttpServletRequest req ){
 		
-		System.out.println(counter);
-		
-		
-		return ResponseEntity.ok("successfully");
-	}
-	
-	}
-	
-	
-	
-	
-	
+	Counter counter2 = counterService.findByAcc(counter.getCounterAccount(), counter.getCounterPassword());
 
+	if (counter2 != null ) {
+		HttpSession session = req.getSession();
+		session.setAttribute("counter", counter2);
+		return new ResponseEntity<>("登入成功", HttpStatus.OK);
+		
+	}else
+		
+		return new ResponseEntity<>("登入失敗", HttpStatus.UNAUTHORIZED);
+	}
+	
+	// ========================== 透過session取得櫃位資訊 ==========================
+	
+	 @GetMapping("/counter/counterAcc")
+	    public  Counter getSessionAcc(HttpSession session){ //@Path用來取得url路徑的值
+	        return (Counter)session.getAttribute("counter");
+	    }
+	 
+	// ========================== 登出 ==========================
+	
+	 @GetMapping("/sign_out")
+	    public String signut(HttpSession session){
+	      //銷毀session中的KV
+	        session.removeAttribute("counter");
+	        return "登出成功";
+	    }
+	}
+	

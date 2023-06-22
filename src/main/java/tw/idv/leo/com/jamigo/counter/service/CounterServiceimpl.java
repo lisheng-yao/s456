@@ -48,4 +48,12 @@ public class CounterServiceimpl implements CounterService {
 		return counter.orElse(null);
 	}
 
+	@Override
+	public Counter findByAcc(String counterAccount, String counterPassword) {
+		
+		return counterRepository.findByCounterAccountAndCounterPassword(counterAccount, counterPassword);
+		
+		
+	}
+
 }
