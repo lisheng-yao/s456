@@ -295,92 +295,161 @@
             </a>
           </div>
         </div>
+        <!-- 網頁內容主體 -->
         <div class="col-10 page-body">
-          <div class="controll-box counter-detail-controll-box">
-            <div class="back-end-box-title counter-detail-controll-title">
-              <h2>櫃位帳號明細</h2>
+          <div class="controll-box counter-alter-controll-box">
+            <div class="back-end-box-title counter-alter-controll-title">
+              <h2>櫃位帳號修改</h2>
             </div>
-            <div class="controll-content counter-detail-controll-content">
-              <table
-                class="table controll-table detail-controll-table counter-detail-controll-table mt-3"
-              >
-                <thead>
-                  <tr>
-                    <th scope="col">欄位名</th>
-                    <th scope="col">欄位值</th>
-                  </tr>
-                </thead>
-                <tbody id="table-body">
-                  <tr>
-                    <th scope="row">編號</th>
-                    <td id="counterNo"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">櫃位名稱</th>
-                    <td id="counterName"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">抽成比例</th>
-                    <td id="cutPercent"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">帳號</th>
-                    <td id="counterAccount"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">狀態</th>
-                    <td id="counterStat"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">統編</th>
-                    <td id="counterGui"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">樓層</th>
-                    <td id="counterFloor"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">櫃位電話</th>
-                    <td id="counterTel"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">聯絡人</th>
-                    <td id="counterPoc"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">聯絡電話</th>
-                    <td id="counterPocPhone"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">聯絡地址</th>
-                    <td id="counterPocAddress"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">信箱</th>
-                    <td id="counterEmail"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">轉帳</th>
-                    <td id="counterBankAccount"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">被檢舉成功次數</th>
-                    <td id="counterReportCount"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">關於我們</th>
-                    <td id="counterAbout"></td>
-                  </tr>
-                  <tr>
-                    <th scope="row">櫃位頭貼</th>
-                    <td id="counterPic"></td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="button-group mt-3">
-              <a href="/Jamigo/counter/counter_dataUpdate.html" class="btn revise-btn btn-outline-primary">修改</a>
-              <a href="#" class="btn btn-outline-secondary ml-2">返回總覽</a>
+            <div class="controll-content counter-alter-controll-content">
+              <form action="">
+                <div class="input-group mt-2">
+                  <label for="inputAccount" class="input-group-text"
+                    >櫃位帳號11111111111111</label
+                  >
+                  <input type="text" class="form-control" id="inputAccount" />
+                </div>
+                <div class="input-group mt-2">
+                  <label for="inputCounterName" class="input-group-text"
+                    >櫃位名稱</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCounterName"
+                  />
+                </div>
+                <div class="input-group mt-2">
+                  <label for="inputCutPercent" class="input-group-text"
+                    >抽成比例</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCutPercent"
+                  />
+                </div>
+                <div class="form-check form-switch mt-2">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    role="switch"
+                    id="flexSwitchCounterStat"
+                  />
+                  <label class="form-check-label" for="flexSwitchCounterStat"
+                    >櫃位狀態</label
+                  >
+                </div>
+                <div class="input-group mt-2">
+                  <label for="inputCounterGui" class="input-group-text"
+                    >統編</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCounterGui"
+                  />
+                </div>
+                <select
+                  class="form-select mt-2"
+                  aria-label="Default select example"
+                >
+                  <option selected>櫃位樓層</option>
+                  <option value="1">1樓</option>
+                  <option value="2">2樓</option>
+                  <option value="3">3樓</option>
+                  <option value="4">4樓</option>
+                  <option value="5">5樓</option>
+                </select>
+                <div class="input-group mt-2">
+                  <label for="inputCounterTel" class="input-group-text"
+                    >櫃位電話</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCounterTel"
+                  />
+                </div>
+                <div class="input-group mt-2">
+                  <label for="inputCounterPoc" class="input-group-text"
+                    >聯絡人</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCounterPoc"
+                  />
+                </div>
+                <div class="input-group mt-2">
+                  <label for="inputCounterPocPhone" class="input-group-text"
+                    >聯絡電話</label
+                  >
+                  <input
+                    type="tel"
+                    class="form-control"
+                    id="inputCounterPocPhone"
+                  />
+                </div>
+                <div class="input-group mt-2">
+                  <label for="inputCounterPocAddress" class="input-group-text"
+                    >聯絡地址</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="inputCounterPocAddress"
+                  />
+                </div>
+
+                <div class="input-group mt-2">
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="信箱帳號"
+                    aria-label="emailAccount"
+                  />
+                  <span class="input-group-text">@</span>
+                  <input
+                    type="text"
+                    class="form-control"
+                    placeholder="gmail.com"
+                    aria-label="mailComp"
+                  />
+                </div>
+
+                <div class="input-group mt-2">
+                  <span class="input-group-text">關於我們</span>
+                  <textarea
+                    class="form-control"
+                    aria-label="With textarea"
+                  ></textarea>
+                </div>
+
+                <div class="input-group mt-2">
+                  <label class="input-group-text" for="inputGroupFile"
+                    >櫃位頭貼</label
+                  >
+                  <input type="file" class="form-control" id="inputGroupFile" />
+                </div>
+                <div class="button-group mt-2">
+                  <button
+                    type="button"
+                    class="btn revise-btn btn-outline-primary"
+                  >
+                    確認修改
+                  </button>
+                  <button
+                    type="button"
+                    class="btn delete-btn btn-outline-danger ml-2"
+                  >
+                    刪除櫃位
+                  </button>
+                  <button type="button" class="btn btn-outline-secondary ml-2">
+                    取消
+                  </button>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -421,7 +490,7 @@
         fetch("/Jamigo/counter/counterAcc")
           .then((response) => response.json())
           .then((data) => {
-            console.log(data);
+        	console.log(data);
             document.getElementById("counterNo").textContent = data.counterNo;
             document.getElementById("counterName").textContent =
               data.counterName;
