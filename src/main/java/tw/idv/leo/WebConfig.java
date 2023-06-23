@@ -1,4 +1,4 @@
-package tw.idv.leo.com.jamigo.counter.contrller;
+package tw.idv.leo;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Configuration;
@@ -13,17 +13,8 @@ public class WebConfig implements WebMvcConfigurer {
 
     @Override
     public void addInterceptors(InterceptorRegistry registry) {
-
-/*
-        //在這個patterns裡面就是不用登入的
-        List<String> patterns = new ArrayList<>();
-        patterns.add("/user_login");
-        patterns.add("/static/**");
-*/
-
-      //有些之後會用到
         registry.addInterceptor(loginInterceptor)
-                .addPathPatterns("/Jamigo/counter/*");
-        //.excludePathPatterns(patterns);
+                .addPathPatterns("/counter/**")
+                .excludePathPatterns("/counter/login/**");
     }
 }
