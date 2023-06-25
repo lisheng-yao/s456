@@ -304,148 +304,195 @@
             <div class="controll-content counter-alter-controll-content">
               <form action="">
                 <div class="input-group mt-2">
-                  <label for="inputAccount" class="input-group-text"
-                    >櫃位帳號11111111111111</label
-                  >
-                  <input type="text" class="form-control" id="inputAccount" />
-                </div>
-                <div class="input-group mt-2">
-                  <label for="inputCounterName" class="input-group-text"
-                    >櫃位名稱</label
+                  <label for="counterNo" class="input-group-text" hidden
+                    >櫃位編號</label
                   >
                   <input
                     type="text"
                     class="form-control"
-                    id="inputCounterName"
+                    id="counterNo"
+                    disabled
+                    hidden
                   />
                 </div>
                 <div class="input-group mt-2">
-                  <label for="inputCutPercent" class="input-group-text"
+                  <label for="counterName" class="input-group-text"
+                    >櫃位名稱</label
+                  >
+                  <input type="text" class="form-control" id="counterName" />
+                </div>
+                <div class="input-group mt-2" hidden>
+                  <label for="cutPercent" class="input-group-text" hidden
                     >抽成比例</label
                   >
                   <input
                     type="text"
                     class="form-control"
-                    id="inputCutPercent"
+                    id="cutPercent"
+                    disabled
+                    hidden
                   />
                 </div>
-                <div class="form-check form-switch mt-2">
+                <div class="input-group mt-2" hidden>
+                  <label for="account" class="input-group-text" hidden
+                    >櫃位帳號</label
+                  >
                   <input
-                    class="form-check-input"
-                    type="checkbox"
-                    role="switch"
-                    id="flexSwitchCounterStat"
+                    type="text"
+                    class="form-control"
+                    id="account"
+                    disabled
+                    hidden
                   />
-                  <label class="form-check-label" for="flexSwitchCounterStat"
+                </div>
+                <div class="input-group mt-2">
+                  <label for="counterPassword" class="input-group-text"
+                    >櫃位密碼</label
+                  >
+                  <input
+                    type="password"
+                    class="form-control"
+                    id="counterPassword"
+                  />
+                </div>
+
+                <div class="input-group mt-2">
+                  <label for="counterStat" class="input-group-text"
                     >櫃位狀態</label
                   >
-                </div>
-                <div class="input-group mt-2">
-                  <label for="inputCounterGui" class="input-group-text"
-                    >統編</label
-                  >
                   <input
                     type="text"
                     class="form-control"
-                    id="inputCounterGui"
+                    id="counterStat"
+                    disabled
                   />
                 </div>
-                <select
-                  class="form-select mt-2"
-                  aria-label="Default select example"
-                >
-                  <option selected>櫃位樓層</option>
-                  <option value="1">1樓</option>
-                  <option value="2">2樓</option>
-                  <option value="3">3樓</option>
-                  <option value="4">4樓</option>
-                  <option value="5">5樓</option>
-                </select>
                 <div class="input-group mt-2">
-                  <label for="inputCounterTel" class="input-group-text"
+                  <label for="counterGui" class="input-group-text">統編</label>
+                  <input type="text" class="form-control" id="counterGui" />
+                </div>
+                <div class="input-group mt-2">
+                  <label for="counterFloor" class="input-group-text"
+                    >櫃位樓層</label
+                  >
+                  <input type="text" class="form-control" id="counterFloor" />
+                </div>
+                <div class="input-group mt-2">
+                  <label for="counterTel" class="input-group-text"
                     >櫃位電話</label
                   >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputCounterTel"
-                  />
+                  <input type="text" class="form-control" id="counterTel" />
                 </div>
                 <div class="input-group mt-2">
-                  <label for="inputCounterPoc" class="input-group-text"
+                  <label for="counterPoc" class="input-group-text"
                     >聯絡人</label
                   >
-                  <input
-                    type="text"
-                    class="form-control"
-                    id="inputCounterPoc"
-                  />
+                  <input type="text" class="form-control" id="counterPoc" />
                 </div>
                 <div class="input-group mt-2">
-                  <label for="inputCounterPocPhone" class="input-group-text"
+                  <label for="counterPocPhone" class="input-group-text"
                     >聯絡電話</label
                   >
-                  <input
-                    type="tel"
-                    class="form-control"
-                    id="inputCounterPocPhone"
-                  />
+                  <input type="tel" class="form-control" id="counterPocPhone" />
                 </div>
                 <div class="input-group mt-2">
-                  <label for="inputCounterPocAddress" class="input-group-text"
+                  <label for="counterPocAddress" class="input-group-text"
                     >聯絡地址</label
                   >
                   <input
                     type="text"
                     class="form-control"
-                    id="inputCounterPocAddress"
+                    id="counterPocAddress"
                   />
                 </div>
 
                 <div class="input-group mt-2">
+                  <label for="counterEmail" class="input-group-text"
+                    >電子信箱</label
+                  >
+                  <input type="email" class="form-control" id="counterEmail" />
+                </div>
+
+                <div class="input-group mt-2">
+                  <label for="counterBankAccount" class="input-group-text"
+                    >銀行帳號</label
+                  >
                   <input
                     type="text"
                     class="form-control"
-                    placeholder="信箱帳號"
-                    aria-label="emailAccount"
-                  />
-                  <span class="input-group-text">@</span>
-                  <input
-                    type="text"
-                    class="form-control"
-                    placeholder="gmail.com"
-                    aria-label="mailComp"
+                    id="counterBankAccount"
                   />
                 </div>
 
                 <div class="input-group mt-2">
-                  <span class="input-group-text">關於我們</span>
+                  <label
+                    for="counterReportCount"
+                    class="input-group-text"
+                    hidden
+                    >檢舉次數</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="counterReportCount"
+                    hidden
+                    disabled
+                  />
+                </div>
+
+                <div class="input-group mt-2">
+                  <span class="input-group-text" id="">關於我們</span>
                   <textarea
                     class="form-control"
                     aria-label="With textarea"
+                    id="counterAbout"
                   ></textarea>
                 </div>
 
                 <div class="input-group mt-2">
-                  <label class="input-group-text" for="inputGroupFile"
+                  <label class="input-group-text" for="inputGroupFile" id=""
+                    >更新櫃位頭貼</label
+                  >
+                  <input
+                    type="file"
+                    class="form-control"
+                    accept="image/*"
+                    id="counterPic"
+                  />
+                  <button
+                    type="button"
+                    class="btn btn-primary"
+                    onclick="updatePic()"
+                  >
+                    確認上傳
+                  </button>
+                </div>
+
+                <div class="input-group mt-2">
+                  <label
+                    class="input-group-text"
+                    for="inputGroupFile"
+                    id=""
+                    style="display: flex"
                     >櫃位頭貼</label
                   >
-                  <input type="file" class="form-control" id="inputGroupFile" />
+                  <div id="counterPicO"></div>
                 </div>
+
                 <div class="button-group mt-2">
                   <button
                     type="button"
                     class="btn revise-btn btn-outline-primary"
+                    onclick="updateCounter()"
                   >
                     確認修改
                   </button>
+
                   <button
                     type="button"
-                    class="btn delete-btn btn-outline-danger ml-2"
+                    class="btn btn-outline-secondary ml-2"
+                    onclick="location.href='/Jamigo/counter/counter_data.html'"
                   >
-                    刪除櫃位
-                  </button>
-                  <button type="button" class="btn btn-outline-secondary ml-2">
                     取消
                   </button>
                 </div>
@@ -483,6 +530,8 @@
       );
     </script>
 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
     <!-------------------------------------- 取得所有資訊 ---------------------------------->
 
     <script>
@@ -490,41 +539,167 @@
         fetch("/Jamigo/counter/counterAcc")
           .then((response) => response.json())
           .then((data) => {
-        	console.log(data);
-            document.getElementById("counterNo").textContent = data.counterNo;
-            document.getElementById("counterName").textContent =
-              data.counterName;
-            document.getElementById("cutPercent").textContent = data.cutPercent;
-            document.getElementById("counterAccount").textContent =
-              data.counterAccount;
-            document.getElementById("counterStat").textContent =
-              data.counterStat === 1 ? "啟用" : "停用";
-            document.getElementById("counterGui").textContent = data.counterGui;
-            document.getElementById("counterFloor").textContent =
-              data.counterFloor;
-            document.getElementById("counterTel").textContent = data.counterTel;
-            document.getElementById("counterPoc").textContent = data.counterPoc;
-            document.getElementById("counterPocPhone").textContent =
+            console.log(data);
+            // 將獲取的資料填入表單
+            document.getElementById("counterNo").value = data.counterNo;
+            document.getElementById("counterName").value = data.counterName;
+            document.getElementById("cutPercent").value = data.cutPercent;
+            document.getElementById("account").value = data.counterAccount;
+            document.getElementById("counterPassword").value =
+              data.counterPassword;
+            document.getElementById("counterStat").value =
+              data.counterStat === 1 ? "啟用" : "未啟用";
+            document.getElementById("counterGui").value = data.counterGui;
+            document.getElementById("counterFloor").value = data.counterFloor;
+            document.getElementById("counterTel").value = data.counterTel;
+            document.getElementById("counterPoc").value = data.counterPoc;
+            document.getElementById("counterPocPhone").value =
               data.counterPocPhone;
-            document.getElementById("counterPocAddress").textContent =
+            document.getElementById("counterPocAddress").value =
               data.counterPocAddress;
-            document.getElementById("counterEmail").textContent =
-              data.counterEmail;
-            document.getElementById("counterBankAccount").textContent =
+            document.getElementById("counterEmail").value = data.counterEmail;
+            document.getElementById("counterBankAccount").value =
               data.counterBankAccount;
-            document.getElementById("counterReportCount").textContent =
+            document.getElementById("counterReportCount").value =
               data.counterReportCount;
-            document.getElementById("counterAbout").textContent =
-              data.counterAbout;
+            document.getElementById("counterAbout").value = data.counterAbout;
 
             const img = document.createElement("img");
             img.src = "/Jamigo/counterPic/" + data.counterNo;
             img.alt = "";
             img.classList.add("detail-controll-table-img", "col-2");
-            document.getElementById("counterPic").appendChild(img);
+            document.getElementById("counterPicO").appendChild(img);
           })
-          .catch((error) => console.log("錯誤:", error));
+          .catch((error) => {
+            console.error("發生錯誤:", error);
+          });
       });
+    </script>
+
+    <!------------------------------------- 確認update ------------------------------->
+
+    <script>
+      // 用於將圖片文件轉換為 Base64 字串
+      // function convertImageToBase64(counterPic) {
+      //   return new Promise((resolve, reject) => {
+      //     const reader = new FileReader();
+      //     reader.readAsDataURL(counterPic);
+      //     reader.onload = () => resolve(reader.result);
+      //     reader.onerror = (error) => reject(error);
+      //   });
+      // }
+
+      async function updateCounter() {
+        const counterNo = document.getElementById("counterNo").value;
+        const counterName = document.getElementById("counterName").value;
+        const cutPercent = document.getElementById("cutPercent").value;
+        const account = document.getElementById("account").value;
+        const counterPassword =
+          document.getElementById("counterPassword").value;
+        const counterStat =
+          document.getElementById("counterStat").value === "啟用" ? "1" : "0";
+        const counterGui = document.getElementById("counterGui").value;
+        const counterFloor = document.getElementById("counterFloor").value;
+        const counterTel = document.getElementById("counterTel").value;
+        const counterPoc = document.getElementById("counterPoc").value;
+        const counterPocPhone =
+          document.getElementById("counterPocPhone").value;
+        const counterPocAddress =
+          document.getElementById("counterPocAddress").value;
+        const counterEmail = document.getElementById("counterEmail").value;
+        const counterBankAccount =
+          document.getElementById("counterBankAccount").value;
+        const counterReportCount =
+          document.getElementById("counterReportCount").value;
+        const counterAbout = document.getElementById("counterAbout").value;
+
+        // const counterPicInput = document.getElementById("counterPic");
+        // const counterPic = counterPicInput.files[0];
+
+        // let base64Image = ""; // 預設為空字串
+
+        // if (counterPic) {
+        //   // 如果有選擇圖片，才進行轉
+        //   base64Image = await convertImageToBase64(counterPic);
+        // }
+
+        const data = {
+          counterNo: counterNo,
+          counterName: counterName,
+          cutPercent: cutPercent,
+          account: account,
+          counterPassword: counterPassword,
+          counterStat: counterStat,
+          counterGui: counterGui,
+          counterFloor: counterFloor,
+          counterTel: counterTel,
+          counterPoc: counterPoc,
+          counterPocPhone: counterPocPhone,
+          counterPocAddress: counterPocAddress,
+          counterEmail: counterEmail,
+          counterBankAccount: counterBankAccount,
+          counterReportCount: counterReportCount,
+          counterAbout: counterAbout,
+          // counterPic: base64Image,
+        };
+        console.log(data);
+
+        fetch(`/Jamigo/update/counter/${counterNo}`, {
+          method: "PUT",
+          headers: {
+            "Content-Type": "application/json",
+          },
+          body: JSON.stringify(data),
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.text();
+            } else {
+              throw new Error("Level update failed");
+              return;
+            }
+          })
+          .then((responseData) => {
+            console.log(responseData);
+            Swal.fire("修改完成", "你很棒唉!", "success").then(() => {
+              window.location.href = "/Jamigo/counter/counter_data.html";
+            });
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
+    </script>
+
+    <!------------------------------------- 確認update圖片 ------------------------------->
+    <script>
+      function updatePic() {
+        const counterNo = document.getElementById("counterNo").value;
+        const counterPicInput = document.getElementById("counterPic");
+        const counterPic = counterPicInput.files[0];
+
+        const formData = new FormData();
+        formData.append("counterPic", counterPic);
+
+        fetch(`/Jamigo/update/counterPic/${counterNo}`, {
+          method: "PUT",
+          body: formData,
+        })
+          .then((response) => {
+            if (response.ok) {
+              return response.text();
+            } else {
+              throw new Error("圖片更新失敗");
+            }
+          })
+          .then((responseData) => {
+            console.log(responseData);
+            window.location.reload();
+          })
+          .catch((error) => {
+            console.error("Error:", error);
+          });
+      }
     </script>
   </body>
 </html>
