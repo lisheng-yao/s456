@@ -26,9 +26,8 @@ public class CounterServiceimpl implements CounterService {
 		// 更新存在的pk
 		var counter2 = counter.orElse(null);
 			counter2.setCounterName(data.getCounterName());
-		    counter2.setCutPercent(data.getCutPercent());
-		    counter2.setCounterPassword(data.getCounterPassword());
-		    counter2.setCounterStat(data.getCounterStat());
+//		    counter2.setCutPercent(data.getCutPercent());
+//		    counter2.setCounterStat(data.getCounterStat());
 		    counter2.setCounterGui(data.getCounterGui());
 		    counter2.setCounterFloor(data.getCounterFloor());
 		    counter2.setCounterTel(data.getCounterTel());

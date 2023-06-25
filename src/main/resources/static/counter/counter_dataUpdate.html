@@ -476,7 +476,7 @@
                     style="display: flex"
                     >櫃位頭貼</label
                   >
-                  <div id="counterPicO"></div>
+                  <div id="counterPicO" style="display: flex"></div>
                 </div>
 
                 <div class="button-group mt-2">
@@ -678,27 +678,34 @@
         const counterPicInput = document.getElementById("counterPic");
         const counterPic = counterPicInput.files[0];
 
-        const formData = new FormData();
-        formData.append("counterPic", counterPic);
+        if (!counterPic) {
+        	Swal.fire({
+        		  icon: 'error',
+        		  title: '請選擇填圖片再上傳'
+        		})
+        } else {
+          const formData = new FormData();
+          formData.append("counterPic", counterPic);
 
-        fetch(`/Jamigo/update/counterPic/${counterNo}`, {
-          method: "PUT",
-          body: formData,
-        })
-          .then((response) => {
-            if (response.ok) {
-              return response.text();
-            } else {
-              throw new Error("圖片更新失敗");
-            }
+          fetch(`/Jamigo/update/counterPic/${counterNo}`, {
+            method: "PUT",
+            body: formData,
           })
-          .then((responseData) => {
-            console.log(responseData);
-            window.location.reload();
-          })
-          .catch((error) => {
-            console.error("Error:", error);
-          });
+            .then((response) => {
+              if (response.ok) {
+                return response.text();
+              } else {
+                throw new Error("圖片更新失敗");
+              }
+            })
+            .then((responseData) => {
+              console.log(responseData);
+              window.location.reload();
+            })
+            .catch((error) => {
+              console.error("Error:", error);
+            });
+        }
       }
     </script>
   </body>

@@ -395,3 +395,45 @@ org.apache.tomcat.util.http.fileupload.impl.FileSizeLimitExceededException: The 
 	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
 	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-9.0.75.jar:9.0.75]
 	at java.base/java.lang.Thread.run(Thread.java:833) ~[na:na]
+2023-06-25 14:55:05.267 [WARN] [http-nio-8080-exec-3] [208] Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'counterPic' is not present]
+2023-06-25 14:57:26.818 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-25 14:57:26.827 [INFO] [Thread-8] [173] Stopping service [Tomcat]
+2023-06-25 14:57:26.827 [INFO] [Thread-8] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-25 14:57:26.832 [INFO] [Thread-8] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25 14:57:26.834 [INFO] [Thread-8] [350] HikariPool-2 - Shutdown initiated...
+2023-06-25 14:57:26.837 [INFO] [Thread-8] [352] HikariPool-2 - Shutdown completed.
+2023-06-25 14:57:26.911 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 8808 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-25 14:57:26.912 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-25 14:57:27.073 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-25 14:57:27.089 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 16 ms. Found 2 JPA repository interfaces.
+2023-06-25 14:57:27.164 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-25 14:57:27.165 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-25 14:57:27.165 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-25 14:57:27.232 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-25 14:57:27.235 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-25 14:57:27.235 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 320 ms
+2023-06-25 14:57:27.280 [INFO] [restartedMain] [110] HikariPool-3 - Starting...
+2023-06-25 14:57:27.294 [INFO] [restartedMain] [123] HikariPool-3 - Start completed.
+2023-06-25 14:57:27.299 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-25 14:57:27.304 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-25 14:57:27.334 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-25 14:57:27.335 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25 14:57:27.410 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-25 14:57:27.454 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-25 14:57:27.491 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-25 14:57:27.507 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-25 14:57:27.511 [INFO] [restartedMain] [61] Started S456Application in 0.63 seconds (JVM running for 742.445)
+2023-06-25 14:57:27.515 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-25 14:57:31.142 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-25 14:57:31.142 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-25 14:57:31.143 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 1 ms
+2023-06-25 14:57:54.469 [WARN] [http-nio-8080-exec-1] [208] Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'counterPic' is not present]
+2023-06-25 14:59:15.560 [WARN] [http-nio-8080-exec-5] [208] Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'counterPic' is not present]
+2023-06-25 14:59:20.781 [WARN] [http-nio-8080-exec-4] [208] Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'counterPic' is not present]
+2023-06-25 14:59:39.916 [WARN] [http-nio-8080-exec-2] [208] Resolved [org.springframework.web.multipart.support.MissingServletRequestPartException: Required request part 'counterPic' is not present]
+2023-06-25 15:03:18.284 [INFO] [RMI TCP Connection(34)-127.0.0.1] [159] Application shutdown requested.
+2023-06-25 15:03:18.292 [INFO] [RMI TCP Connection(34)-127.0.0.1] [173] Stopping service [Tomcat]
+2023-06-25 15:03:18.293 [INFO] [RMI TCP Connection(34)-127.0.0.1] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-25 15:03:18.297 [INFO] [RMI TCP Connection(34)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-25 15:03:18.298 [INFO] [RMI TCP Connection(34)-127.0.0.1] [350] HikariPool-3 - Shutdown initiated...
+2023-06-25 15:03:18.301 [INFO] [RMI TCP Connection(34)-127.0.0.1] [352] HikariPool-3 - Shutdown completed.
