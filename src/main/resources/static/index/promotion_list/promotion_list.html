@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JAMIGO MALL</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+    <!-- Additional CSS Files -->
+    <link rel="stylesheet" href="assets/css/fontawesome.css" />
+    <link rel="stylesheet" href="assets/css/templatemo-lugx-gaming.css" />
+    <!-- bootstrap引用檔案 -->
+    <link rel="stylesheet" href="css/bootstrap.css" />
+    <!-- Font Awesome引用檔案 -->
+    <link rel="stylesheet" href="css/all.css" />
+    <!-- css本體 -->
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+  </head>
+
+  <!-- 輪播專用css -->
+  <style>
+    #carouselExampleFade {
+      width: 100%;
+      height: 600px;
+      overflow: hidden;
+    }
+
+    #carouselExampleFade .carousel-inner {
+      width: 100%;
+      height: 100%;
+    }
+
+    #carouselExampleFade .carousel-item {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      height: 100%;
+    }
+
+    #carouselExampleFade .carousel-item img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  </style>
+
+  <body>
+    <!-- navbar製作導航欄 bg 背景色 navbar-dark 深色主題 p-3 內距留3 -->
+    <nav class="navbar navbar-dark p-3 navbar-expand-lg">
+      <div class="container">
+        <a href="#" class="navbar-brand"
+          ><img src="images/JAMIGO_LOGO.gif" alt="" class="LOGO"
+        /></a>
+        <!-- data-bs-toggle = "collapse" 觸發導覽列縮放功能  -->
+        <!-- data-bs-target="#navbarSupportedContent"   導覽列指向的目標 -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- 將collapse 加入縮放清單  -->
+        <!-- ms-auto 項目自動靠右   me-auto 靠左 -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto">
+            <li class="nav-item">
+              <a
+                class="button-01 nav-link"
+                href="index.html"
+                style="color: yellow"
+                >首頁</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="button-01 nav-link" href="https://chat.openai.com/"
+                >線上商城</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="button-01 nav-link" href="https://chat.openai.com/"
+                >文藝活動</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="button-01 nav-link" href="https://chat.openai.com/"
+                >折扣快報</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="button-01 nav-link" href="https://chat.openai.com/"
+                >客服系統</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="button-01 nav-link" href="https://chat.openai.com/"
+                >會員專區</a
+              >
+            </li>
+          </ul>
+          <!-- 導覽列右側 -->
+          <form class="form-inline">
+            <div class="nav_icon">
+              <div class="search-text ms-auto">
+                <a href="#"
+                  ><i
+                    class="nav-icon fa-solid fa-cart-shopping"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="nav-icon fa-regular fa-user"
+                    style="color: #f5f5f5"
+                  ></i
+                ></a>
+                <a href="#"
+                  ><i
+                    class="nav-icon fa-solid fa-magnifying-glass"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+                <input
+                  class="serch"
+                  type="text"
+                  value="Search"
+                  onfocus="this.value = ''"
+                />
+                <a href="#" onclick="goBack()"
+                  ><i
+                    class="fa-solid fa-person-walking-arrow-right"
+                    style="color: #ffffff"
+                  ></i
+                ></a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
+    </nav>
+    <!-------------------------------------------- 頁首結束 ------------------------------>
+    <!------------------------------------------ 內文主題 放這 --------------------------->
+    <!----------------------------------------- bn輪播開始 ------------------------------------>
+
+    <div
+      id="carouselExampleFade"
+      class="carousel slide carousel-fade"
+      data-bs-ride="carousel"
+      data-bs-pause="false"
+    >
+      <div class="carousel-inner">
+        <div class="carousel-item active" data-bs-interval="2000">
+          <img src="./images/b1.jpg" class="d-block" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/b2.jpg" class="d-block" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/b3.jpg" class="d-block" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/b4.jpg" class="d-block" alt="..." />
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+          <img src="./images/b5.jpg" class="d-block" alt="..." />
+        </div>
+      </div>
+      <button
+        class="carousel-control-prev"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+      <button
+        class="carousel-control-next"
+        type="button"
+        data-bs-target="#carouselExampleFade"
+        data-bs-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+    <!----------------------------------------- bn輪播結束 ------------------------------------>
+    <div class="container">
+      <div class="row justify-content-center">
+        <div
+          class="col-sm-4"
+          style="
+            text-align: center;
+            font-size: 30px;
+            color: #ffffff;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px -33px -30px 0;
+            padding: 10px 0 10px 0;
+            background-color: rgb(50, 56, 64);
+            border-radius: 10px;
+          "
+        >
+          瀏覽優惠
+        </div>
+      </div>
+    </div>
+    <!-- 篩選分類按鈕 開始-->
+    <div class="section trending">
+      <div class="container">
+        <ul class="trending-filter">
+          <li>
+            <a class="is_active" href="#!" data-filter="*">Show All</a>
+          </li>
+          <li>
+            <a href="#!" data-filter=".adm">點數活動</a>
+          </li>
+          <li>
+            <a href="#!" data-filter=".cou">折價券活動</a>
+          </li>
+        </ul>
+
+        <!-- 篩選分類按鈕 結束-->
+
+        <!-- 選項圖卡 開始 -->
+
+        <div class="row trending-box">
+          <!-- 圖卡 開始 -->
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 trending-items col-md-6 adm"
+          >
+            <div class="item">
+              <div class="thumb">
+                <a href="/promotion_list/promotion_data.html"
+                  ><img src="assets/images/優惠.jpg" alt=""
+                /></a>
+                <span class="price"><em></em>點數活動</span>
+              </div>
+              <div class="down-content">
+                <span class="category">全站活動</span>
+                <h4>全站滿3000贈 姐姐香味大禮包</h4>
+                <a href="/promotion_list/promotion_data.html"
+                  ><i class="fa-solid fa-ticket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- 圖卡 結束 -->
+
+          <!-- 圖卡 開始 -->
+          <div
+            class="col-lg-4 col-md-6 align-self-center mb-30 trending-items col-md-6 cou"
+          >
+            <div class="item">
+              <div class="thumb">
+                <a href="/promotion_list/promotion_data.html"
+                  ><img src="assets/images/優惠.jpg" alt=""
+                /></a>
+                <span class="price" style="background-color: red"
+                  ><em></em>折價券活動</span
+                >
+              </div>
+              <div class="down-content">
+                <span class="category">櫃位活動</span>
+                <h4>全站滿3000贈 姐姐香味大禮包</h4>
+                <a href="/promotion_list/promotion_data.html"
+                  ><i class="fa-solid fa-ticket"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <!-- 圖卡 結束 -->
+        </div>
+
+        <!-- 選項圖卡 開始 -->
+
+        <!-- 下方頁數按鈕 開始 -->
+        <!-- <div class="row">
+          <div class="col-lg-12">
+            <ul class="pagination">
+              <li><a href="#"> &lt; </a></li>
+              <li><a href="#">1</a></li>
+              <li><a class="is_active" href="#">2</a></li>
+              <li><a href="#">3</a></li>
+              <li><a href="#"> &gt; </a></li>
+            </ul>
+          </div>
+        </div> -->
+      </div>
+    </div>
+    <!-- 下方頁數按鈕 結束 -->
+    <!---------------------------------- 內容主題結束 --------------------------------->
+    <!------------------------------------ 頁尾開始 ----------------------------------->
+    <div class="footer_section bg-dark text-light">
+      <div class="container_footer">
+        <div class="row">
+          <div class="col-lg-2 col-sm-6 col-xs-12">
+            <h1 class="customer_text">合作資訊</h1>
+            <div class="footer_lorem_text">
+              <p style="color: #f5f5f5"><a href="#">櫃位申請</a></p>
+              <p style="color: #f5f5f5"><a href="#">場地相關</a></p>
+              <p style="color: #f5f5f5"><a href="#">人才招募</a></p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-xs-12">
+            <h1 class="customer_text">關於我們</h1>
+            <div class="footer_lorem_text">
+              <p style="color: #f5f5f5"><a href="#">營業資訊</a></p>
+              <p style="color: #f5f5f5"><a href="#">FAQ中心</a></p>
+              <p style="color: #f5f5f5"><a href="#">功能地圖</a></p>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 col-xs-12">
+            <h1 class="customer_text">會員相關</h1>
+            <div class="footer_lorem_text">
+              <p style="color: #f5f5f5"><a href="#">付款方式</a></p>
+              <p style="color: #f5f5f5"><a href="#">配送流程</a></p>
+              <p style="color: #f5f5f5"><a href="#">退換商品</a></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <h1 class="customer_text" style="color: #f5f5f5">聯絡我們</h1>
+            <div class="footer_lorem_text">
+              <p style="color: #f5f5f5">
+                JAMIGO 1234-5678 <br />桃園市中壢區復興路46號
+              </p>
+              <p style="color: #f5f5f5">010-020-0340</p>
+              <p style="color: #f5f5f5">&copy;info@company.co</p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-sm-6 col-xs-12">
+            <img src="images/footer_LOGO.png" alt="" class="footer_LOGO" />
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-------------------------------------  頁尾結束 ---------------------------------->
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/isotope.min.js"></script>
+    <script src="assets/js/owl-carousel.js"></script>
+    <script src="assets/js/counter.js"></script>
+    <script src="assets/js/custom.js"></script>
+  </body>
+  <!-- bootstrap -->
+  <script src="js/bootstrap.js"></script>
+  <!-- FontAwesome -->
+  <script src="js/all.js"></script>
+  <!-- js -->
+  <script src="js/script.js"></script>
+</html>
