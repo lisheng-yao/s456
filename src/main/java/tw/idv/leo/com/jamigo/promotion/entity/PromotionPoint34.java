@@ -17,7 +17,7 @@ import lombok.ToString;
 @Setter
 @Table(name = "promotion_point")
 @ToString
-public class PromotionPoint {
+public class PromotionPoint34 {
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)

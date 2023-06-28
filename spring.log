@@ -579,3 +579,241 @@
 2023-06-28 18:29:20.776 [INFO] [RMI TCP Connection(15)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
 2023-06-28 18:29:20.779 [INFO] [RMI TCP Connection(15)-127.0.0.1] [350] HikariPool-1 - Shutdown initiated...
 2023-06-28 18:29:20.782 [INFO] [RMI TCP Connection(15)-127.0.0.1] [352] HikariPool-1 - Shutdown completed.
+2023-06-28 18:29:50.713 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 19552 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-28 18:29:50.714 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-28 18:29:50.746 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-28 18:29:50.747 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-28 18:29:51.178 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-28 18:29:51.229 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 44 ms. Found 5 JPA repository interfaces.
+2023-06-28 18:29:51.681 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-28 18:29:51.689 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-28 18:29:51.689 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-28 18:29:51.845 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-28 18:29:51.852 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-28 18:29:51.852 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 1105 ms
+2023-06-28 18:29:51.997 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
+2023-06-28 18:29:52.200 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
+2023-06-28 18:29:52.236 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-28 18:29:52.269 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-28 18:29:52.398 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-28 18:29:52.463 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-28 18:29:52.823 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-28 18:29:52.831 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-28 18:29:53.171 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-28 18:29:53.266 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-28 18:29:53.449 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-28 18:29:53.481 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-28 18:29:53.490 [INFO] [restartedMain] [61] Started S456Application in 3.016 seconds (JVM running for 3.5)
+2023-06-28 18:29:53.521 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-28 18:29:53.521 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-28 18:29:53.522 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 1 ms
+2023-06-28 18:43:57.274 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-28 18:43:57.284 [INFO] [Thread-6] [173] Stopping service [Tomcat]
+2023-06-28 18:43:57.285 [INFO] [Thread-6] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-28 18:43:57.291 [INFO] [Thread-6] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-28 18:43:57.293 [INFO] [Thread-6] [350] HikariPool-1 - Shutdown initiated...
+2023-06-28 18:43:57.297 [INFO] [Thread-6] [352] HikariPool-1 - Shutdown completed.
+2023-06-28 18:43:57.345 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 19552 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-28 18:43:57.346 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-28 18:43:57.473 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-28 18:43:57.489 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2023-06-28 18:43:57.545 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-28 18:43:57.546 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-28 18:43:57.546 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-28 18:43:57.586 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-28 18:43:57.588 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-28 18:43:57.588 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 240 ms
+2023-06-28 18:43:57.616 [INFO] [restartedMain] [110] HikariPool-2 - Starting...
+2023-06-28 18:43:57.625 [INFO] [restartedMain] [123] HikariPool-2 - Start completed.
+2023-06-28 18:43:57.629 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-28 18:43:57.632 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-28 18:43:57.669 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-28 18:43:57.669 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-28 18:43:57.770 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-28 18:43:57.799 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-28 18:43:57.831 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-28 18:43:57.839 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-28 18:43:57.843 [INFO] [restartedMain] [61] Started S456Application in 0.515 seconds (JVM running for 847.854)
+2023-06-28 18:43:57.845 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-28 18:43:59.031 [INFO] [RMI TCP Connection(23)-127.0.0.1] [159] Application shutdown requested.
+2023-06-28 18:43:59.037 [INFO] [RMI TCP Connection(23)-127.0.0.1] [173] Stopping service [Tomcat]
+2023-06-28 18:43:59.041 [INFO] [RMI TCP Connection(23)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-28 18:43:59.041 [INFO] [RMI TCP Connection(23)-127.0.0.1] [350] HikariPool-2 - Shutdown initiated...
+2023-06-28 18:43:59.043 [INFO] [RMI TCP Connection(23)-127.0.0.1] [352] HikariPool-2 - Shutdown completed.
+2023-06-28 18:50:23.789 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 16264 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-28 18:50:23.790 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-28 18:50:23.820 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-28 18:50:23.821 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-28 18:50:24.204 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-28 18:50:24.246 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2023-06-28 18:50:24.642 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-28 18:50:24.649 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-28 18:50:24.649 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-28 18:50:24.780 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-28 18:50:24.786 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-28 18:50:24.787 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 966 ms
+2023-06-28 18:50:24.914 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
+2023-06-28 18:50:25.111 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
+2023-06-28 18:50:25.144 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-28 18:50:25.175 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-28 18:50:25.287 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-28 18:50:25.356 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-28 18:50:25.720 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-28 18:50:25.728 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-28 18:50:25.972 [WARN] [restartedMain] [591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'promotionListController': Unsatisfied dependency expressed through field 'promotionCRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'promotionCRepository' defined in tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData(); Reason: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!
+2023-06-28 18:50:25.973 [INFO] [restartedMain] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-28 18:50:25.980 [INFO] [restartedMain] [350] HikariPool-1 - Shutdown initiated...
+2023-06-28 18:50:25.984 [INFO] [restartedMain] [352] HikariPool-1 - Shutdown completed.
+2023-06-28 18:50:25.986 [INFO] [restartedMain] [173] Stopping service [Tomcat]
+2023-06-28 18:50:25.993 [INFO] [restartedMain] [136] 
+
+Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
+2023-06-28 18:50:26.010 [ERROR] [restartedMain] [821] Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'promotionListController': Unsatisfied dependency expressed through field 'promotionCRepository'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'promotionCRepository' defined in tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData(); Reason: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292)
+	at tw.idv.leo.S456Application.main(S456Application.java:10)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49)
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'promotionCRepository' defined in tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository defined in @EnableJpaRepositories declared on JpaRepositoriesRegistrar.EnableJpaRepositoriesConfiguration: Invocation of init method failed; nested exception is org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData(); Reason: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1804)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657)
+	... 25 common frames omitted
+Caused by: org.springframework.data.repository.query.QueryCreationException: Could not create query for public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData(); Reason: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!; nested exception is java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!
+	at org.springframework.data.repository.query.QueryCreationException.create(QueryCreationException.java:101)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:107)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$mapMethodsToQuery$1(QueryExecutorMethodInterceptor.java:95)
+	at java.base/java.util.stream.ReferencePipeline$3$1.accept(ReferencePipeline.java:197)
+	at java.base/java.util.Iterator.forEachRemaining(Iterator.java:133)
+	at java.base/java.util.Collections$UnmodifiableCollection$1.forEachRemaining(Collections.java:1061)
+	at java.base/java.util.Spliterators$IteratorSpliterator.forEachRemaining(Spliterators.java:1845)
+	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:509)
+	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:499)
+	at java.base/java.util.stream.ReduceOps$ReduceOp.evaluateSequential(ReduceOps.java:921)
+	at java.base/java.util.stream.AbstractPipeline.evaluate(AbstractPipeline.java:234)
+	at java.base/java.util.stream.ReferencePipeline.collect(ReferencePipeline.java:682)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.mapMethodsToQuery(QueryExecutorMethodInterceptor.java:97)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lambda$new$0(QueryExecutorMethodInterceptor.java:87)
+	at java.base/java.util.Optional.map(Optional.java:260)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.<init>(QueryExecutorMethodInterceptor.java:87)
+	at org.springframework.data.repository.core.support.RepositoryFactorySupport.getRepository(RepositoryFactorySupport.java:365)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.lambda$afterPropertiesSet$5(RepositoryFactoryBeanSupport.java:323)
+	at org.springframework.data.util.Lazy.getNullable(Lazy.java:231)
+	at org.springframework.data.util.Lazy.get(Lazy.java:115)
+	at org.springframework.data.repository.core.support.RepositoryFactoryBeanSupport.afterPropertiesSet(RepositoryFactoryBeanSupport.java:329)
+	at org.springframework.data.jpa.repository.support.JpaRepositoryFactoryBean.afterPropertiesSet(JpaRepositoryFactoryBean.java:144)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800)
+	... 35 common frames omitted
+Caused by: java.lang.IllegalArgumentException: Validation failed for query for method public abstract java.util.List tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository.getPromotionCouponData()!
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:96)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.<init>(SimpleJpaQuery.java:66)
+	at org.springframework.data.jpa.repository.query.JpaQueryFactory.fromMethodWithQueryString(JpaQueryFactory.java:51)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$DeclaredQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:169)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$CreateIfNotFoundQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:253)
+	at org.springframework.data.jpa.repository.query.JpaQueryLookupStrategy$AbstractQueryLookupStrategy.resolveQuery(JpaQueryLookupStrategy.java:93)
+	at org.springframework.data.repository.core.support.QueryExecutorMethodInterceptor.lookupQuery(QueryExecutorMethodInterceptor.java:103)
+	... 57 common frames omitted
+Caused by: java.lang.IllegalArgumentException: org.hibernate.hql.internal.ast.QuerySyntaxException: PromotionCoupon is not mapped [SELECT pc.promotionCouponNo, pc.promotionCouponName, pc.promotionName FROM PromotionCoupon pc]
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:138)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:181)
+	at org.hibernate.internal.ExceptionConverterImpl.convert(ExceptionConverterImpl.java:188)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:757)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:114)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568)
+	at org.springframework.orm.jpa.ExtendedEntityManagerCreator$ExtendedEntityManagerInvocationHandler.invoke(ExtendedEntityManagerCreator.java:362)
+	at jdk.proxy4/jdk.proxy4.$Proxy106.createQuery(Unknown Source)
+	at org.springframework.data.jpa.repository.query.SimpleJpaQuery.validateQuery(SimpleJpaQuery.java:90)
+	... 63 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: PromotionCoupon is not mapped [SELECT pc.promotionCouponNo, pc.promotionCouponName, pc.promotionName FROM PromotionCoupon pc]
+	at org.hibernate.hql.internal.ast.QuerySyntaxException.generateQueryException(QuerySyntaxException.java:79)
+	at org.hibernate.QueryException.wrapWithQueryString(QueryException.java:103)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:220)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.compile(QueryTranslatorImpl.java:144)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:112)
+	at org.hibernate.engine.query.spi.HQLQueryPlan.<init>(HQLQueryPlan.java:73)
+	at org.hibernate.engine.query.spi.QueryPlanCache.getHQLQueryPlan(QueryPlanCache.java:162)
+	at org.hibernate.internal.AbstractSharedSessionContract.getQueryPlan(AbstractSharedSessionContract.java:636)
+	at org.hibernate.internal.AbstractSharedSessionContract.createQuery(AbstractSharedSessionContract.java:748)
+	... 71 common frames omitted
+Caused by: org.hibernate.hql.internal.ast.QuerySyntaxException: PromotionCoupon is not mapped
+	at org.hibernate.hql.internal.ast.util.SessionFactoryHelper.requireClassPersister(SessionFactoryHelper.java:170)
+	at org.hibernate.hql.internal.ast.tree.FromElementFactory.addFromElement(FromElementFactory.java:91)
+	at org.hibernate.hql.internal.ast.tree.FromClause.addFromElement(FromClause.java:77)
+	at org.hibernate.hql.internal.ast.HqlSqlWalker.createFromElement(HqlSqlWalker.java:334)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElement(HqlSqlBaseWalker.java:3782)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromElementList(HqlSqlBaseWalker.java:3671)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.fromClause(HqlSqlBaseWalker.java:746)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.query(HqlSqlBaseWalker.java:602)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.selectStatement(HqlSqlBaseWalker.java:339)
+	at org.hibernate.hql.internal.antlr.HqlSqlBaseWalker.statement(HqlSqlBaseWalker.java:287)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.analyze(QueryTranslatorImpl.java:276)
+	at org.hibernate.hql.internal.ast.QueryTranslatorImpl.doCompile(QueryTranslatorImpl.java:192)
+	... 77 common frames omitted
+2023-06-28 18:52:11.776 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 13100 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-28 18:52:11.777 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-28 18:52:11.807 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-28 18:52:11.808 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-28 18:52:12.191 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-28 18:52:12.231 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
+2023-06-28 18:52:12.625 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-28 18:52:12.632 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-28 18:52:12.633 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-28 18:52:12.762 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-28 18:52:12.770 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-28 18:52:12.770 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 962 ms
+2023-06-28 18:52:12.894 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
+2023-06-28 18:52:13.091 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
+2023-06-28 18:52:13.125 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-28 18:52:13.153 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-28 18:52:13.258 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-28 18:52:13.317 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-28 18:52:13.668 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-28 18:52:13.674 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-28 18:52:13.985 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-28 18:52:14.069 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-28 18:52:14.241 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-28 18:52:14.273 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-28 18:52:14.280 [INFO] [restartedMain] [61] Started S456Application in 2.739 seconds (JVM running for 3.213)
+2023-06-28 18:52:22.553 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-28 18:52:22.554 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-28 18:52:22.556 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 2 ms
+2023-06-28 18:53:16.568 [INFO] [RMI TCP Connection(9)-127.0.0.1] [159] Application shutdown requested.
+2023-06-28 18:53:16.577 [INFO] [RMI TCP Connection(9)-127.0.0.1] [173] Stopping service [Tomcat]
+2023-06-28 18:53:16.578 [INFO] [RMI TCP Connection(9)-127.0.0.1] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-28 18:53:16.583 [INFO] [RMI TCP Connection(9)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-28 18:53:16.586 [INFO] [RMI TCP Connection(9)-127.0.0.1] [350] HikariPool-1 - Shutdown initiated...
+2023-06-28 18:53:16.590 [INFO] [RMI TCP Connection(9)-127.0.0.1] [352] HikariPool-1 - Shutdown completed.

@@ -3,19 +3,18 @@ package tw.idv.leo.com.jamigo.promotion.controller;
 import java.util.List;
 import java.util.ArrayList;
 
-import org.hibernate.annotations.Parameter;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import tw.idv.leo.com.jamigo.promotion.dao.CouponType34Repository;
 import tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository;
 import tw.idv.leo.com.jamigo.promotion.dao.PromotionPRepository;
 import tw.idv.leo.com.jamigo.promotion.entity.CouponType34;
-import tw.idv.leo.com.jamigo.promotion.entity.PromotionCoupon;
-import tw.idv.leo.com.jamigo.promotion.entity.PromotionPoint;
+import tw.idv.leo.com.jamigo.promotion.entity.PromotionCoupon34;
+import tw.idv.leo.com.jamigo.promotion.entity.PromotionPoint34;
 
 @RestController
 public class PromotionListController {
@@ -47,7 +46,7 @@ public class PromotionListController {
 //	================== 折價券活動說明專頁 ========================
 
 	@GetMapping("/coupons/{promotionCouponNo}")
-	public PromotionCoupon getCouponData(@PathVariable Integer promotionCouponNo) {
+	public PromotionCoupon34 getCouponData(@PathVariable Integer promotionCouponNo) {
 
 		return promotionCRepository.findById(promotionCouponNo).orElse(null);
 
@@ -62,16 +61,16 @@ public class PromotionListController {
 //	================== 點數活動說明專頁 =========================
 
 	@GetMapping("/promotion/point/{promotionPointNo}")
-	public PromotionPoint getPointData(@PathVariable Integer promotionPointNo) {
+	public PromotionPoint34 getPointData(@PathVariable Integer promotionPointNo) {
 
-		PromotionPoint promotionPoint = promotionPRepository.findById(promotionPointNo).orElse(null);
+		PromotionPoint34 promotionPoint = promotionPRepository.findById(promotionPointNo).orElse(null);
 
 		return promotionPoint;
 	}
 
 //	================== 點數活動說明專頁 ========================
 	@GetMapping("/points/{promotionPointNo}")
-	public PromotionPoint getAllPoints(@PathVariable Integer promotionPointNo) {
+	public PromotionPoint34 getAllPoints(@PathVariable Integer promotionPointNo) {
 		
 		return promotionPRepository.findById(promotionPointNo).orElse(null);
 	}
