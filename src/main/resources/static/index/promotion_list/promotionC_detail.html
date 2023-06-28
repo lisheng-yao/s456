@@ -393,6 +393,12 @@
                             class="float-right"
                           ></span>
                         </li>
+                        <button
+                          type="button"
+                          class="btn btn-primary d-grid gap-2 col-6 mt-3 mx-auto"
+                        >
+                          立即領取
+                        </button>
                       </ul>
                     </section>
                   </aside>
@@ -487,8 +493,6 @@
           year: "numeric",
           month: "long",
           day: "numeric",
-          hour: "numeric",
-          minute: "numeric",
           timeZone: "Asia/Taipei",
           locale: "zh-TW", //指定中文
         };
@@ -501,54 +505,49 @@
           // 從URL中取出活動ID
           const urlParams = new URLSearchParams(window.location.search);
           //創建了一個 URLSearchParams 物件，該物件可以讓你操作 URL 的查詢字符串參數。
-          const promotionPointNo = urlParams.get("promotionPointNo"); //用於從查詢字符串中提取名為activityId的參數
+          const promotionCouponNo = urlParams.get("promotionCouponNo"); //用於從查詢字符串中提取名為activityId的參數
           // 向後端服務器請求活動數據
-          const response = await axios.get(`/Jamigo/point/${promotionPointNo}`);
-          const pp = response.data;
+          const response = await axios.get(
+            `/Jamigo/coupons/${promotionCouponNo}`
+          );
+          const pc = response.data;
 
           // 向後端服務器請求活動數據
           // 使用活動數據來更新你的頁面
           document.querySelector(
-            "#activity-pic"
-          ).src = `data:image/jpeg;base64,${pp.promotionPic}`;
-          document.querySelector("#activity-name").innerText =
-            pp.promotionPointName;
-          document.querySelector("#activity-detail").innerText =
-            pp.activityDetail;
+            "#promotion-pic"
+          ).src = `data:image/jpeg;base64,${pc.promotionPic}`;
+          document.querySelector("#promotion-coupon-name").innerText =
+            pc.promotionCouponName;
+          document.querySelector("#promotion-name").innerText =
+            pc.promotionName;
+          document.querySelector("#get-couponL-lmit-level").innerText =
+            pc.getCouponLimitLevel;
+          document.querySelector("#amount-of-coupon").innerText =
+            pc.amountOfCoupon;
+          document.querySelector("#get-amount").innerText = pc.getAmount;
           document.getElementById(
-            "activity-start-info"
+            "promotion-effective-date"
           ).innerHTML = `<div class="date-wrapper">${formatDate(
-            activity.activityStartTime
+            pc.promotionEffectiveDate
           )}</div>`;
           document.getElementById(
-            "activity-end-info"
+            "promotion-expire-date"
           ).innerHTML = `<div class="date-wrapper">${formatDate(
-            activity.activityEndTime
+            pc.promotionExpireDate
           )}</div>`;
-          document.getElementById(
-            "registration-start-info"
-          ).innerHTML = `<div class="date-wrapper">${formatDate(
-            activity.activityRegStartTime
-          )}</div>`;
-          document.getElementById(
-            "registration-end-info"
-          ).innerHTML = `<div class="date-wrapper">${formatDate(
-            activity.activityRegEndTime
-          )}</div>`;
-          document.getElementById("activity-location-info").textContent =
-            activity.activityPlaceNo == 0 ? "文創基地" : "露天廣場";
-          document.getElementById("activity-cost-info").textContent =
-            activity.activityCost + " 元";
-          document.getElementById("registration-quota-info").textContent =
-            activity.activityLimit + " 位";
-          // 判斷並賦值活動等級
-          document.getElementById(
-            "registration-qualification-info"
-          ).textContent = activity.activityLev == 0 ? "一般會員" : "VIP會員";
+          let couponTypeNo = pc.couponTypeNo;
+          getCouponType(couponTypeNo);
         } catch (error) {
           // 如果在獲取數據過程中發生錯誤，則打印錯誤信息到控制台
           console.error(error);
           console.log("failed!");
+        }
+        getCouponType(couponTypeNo){
+          axios.get(
+            `/Jamigo/coupontype/${couponTypeNo}`
+          );
+          console.log(data);
         }
       };
     </script>
