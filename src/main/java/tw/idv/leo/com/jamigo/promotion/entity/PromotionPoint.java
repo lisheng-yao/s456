@@ -1,20 +1,34 @@
 package tw.idv.leo.com.jamigo.promotion.entity;
 
+import java.sql.Date;
+
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
+
+@Entity
+@Getter
+@Setter
+@Table(name = "promotion_point")
+@ToString
 public class PromotionPoint {
-	
-	
-	private Integer promotionCouponNo;
-	private String promotionCouponName;
+
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY)
+	private Integer promotionPointNo;
+	private String promotionPointName;
 	private String promotionName;
-	private Integer couponTypeNo;
-	private Integer amountOfCoupon;
-	private Integer getCouponConditions;
-	private Integer getCouponLimitLevel;
-	private Integer getCouponLimitAmount;
-	private Integer promotionEffectiveDate;
-	private Integer promotionExpireDate;
-	private Integer promotionCreateDate;
-	private Integer getAmount;
-	private Integer promotionPic;
+	private String getPointConditions;
+	private Integer getPointMag;
+	private Date promotionExpireDate;
+	private Date promotionEffectiveDate;
+	private Date promotionCreateDate;
+	private byte[] promotionPic;
 
 }

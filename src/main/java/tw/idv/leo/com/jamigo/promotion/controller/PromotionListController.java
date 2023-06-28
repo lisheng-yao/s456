@@ -1,0 +1,79 @@
+package tw.idv.leo.com.jamigo.promotion.controller;
+
+import java.util.List;
+import java.util.ArrayList;
+
+import org.hibernate.annotations.Parameter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import tw.idv.leo.com.jamigo.promotion.dao.CouponType34Repository;
+import tw.idv.leo.com.jamigo.promotion.dao.PromotionCRepository;
+import tw.idv.leo.com.jamigo.promotion.dao.PromotionPRepository;
+import tw.idv.leo.com.jamigo.promotion.entity.CouponType34;
+import tw.idv.leo.com.jamigo.promotion.entity.PromotionCoupon;
+import tw.idv.leo.com.jamigo.promotion.entity.PromotionPoint;
+
+@RestController
+public class PromotionListController {
+
+	@Autowired
+	public PromotionCRepository promotionCRepository;
+
+	@Autowired
+	public PromotionPRepository promotionPRepository;
+	
+	@Autowired
+	public CouponType34Repository couponType34Repository;
+
+//	===================== 列出點數、折價券優惠===================
+
+	@GetMapping("/promotions")
+	public List<Object[]> getAllData() {
+		List<Object[]> promotionPointData = promotionPRepository.getPromotionPointData();
+		List<Object[]> promotionCouponData = promotionCRepository.getPromotionCouponData();
+
+		// 合併兩個list
+		List<Object[]> result = new ArrayList<>();
+		result.addAll(promotionPointData);
+		result.addAll(promotionCouponData);
+
+		return result;
+	}
+
+//	================== 折價券活動說明專頁 ========================
+
+	@GetMapping("/coupons/{promotionCouponNo}")
+	public PromotionCoupon getCouponData(@PathVariable Integer promotionCouponNo) {
+
+		return promotionCRepository.findById(promotionCouponNo).orElse(null);
+
+	}
+	
+	@GetMapping("/coupontype/{couponTypeNo}")
+	public CouponType34 getCouponType(@PathVariable Integer couponTypeNo) {
+		
+		return couponType34Repository.findById(couponTypeNo).orElse(null);
+	}
+
+//	================== 點數活動說明專頁 =========================
+
+	@GetMapping("/promotion/point/{promotionPointNo}")
+	public PromotionPoint getPointData(@PathVariable Integer promotionPointNo) {
+
+		PromotionPoint promotionPoint = promotionPRepository.findById(promotionPointNo).orElse(null);
+
+		return promotionPoint;
+	}
+
+//	================== 點數活動說明專頁 ========================
+	@GetMapping("/points/{promotionPointNo}")
+	public PromotionPoint getAllPoints(@PathVariable Integer promotionPointNo) {
+		
+		return promotionPRepository.findById(promotionPointNo).orElse(null);
+	}
+
+}
