@@ -543,11 +543,28 @@
           console.error(error);
           console.log("failed!");
         }
-        getCouponType(couponTypeNo){
-          axios.get(
-            `/Jamigo/coupontype/${couponTypeNo}`
-          );
-          console.log(data);
+        async function getCouponType(couponTypeNo) {
+          try {
+            const response = await axios.get(
+              `/Jamigo/coupontype/${couponTypeNo}`
+            );
+            const pt = response.data;
+
+            document.querySelector("#coupon-type-name").innerText =
+              pt.couponTypeName;
+            document.querySelector("#coupon-conditions").innerText =
+              pt.couponConditions;
+            document.querySelector("#coupon-price").innerText = pt.couponPrice;
+
+            document.getElementById(
+              "coupon-expire-date"
+            ).innerHTML = `<div class="date-wrapper">${formatDate(
+              pt.couponExpireDate
+            )}</div>`;
+          } catch (error) {
+            console.error(error);
+            console.log("failed!");
+          }
         }
       };
     </script>
