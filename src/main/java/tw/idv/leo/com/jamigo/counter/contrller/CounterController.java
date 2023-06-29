@@ -19,7 +19,6 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
-
 import tw.idv.leo.com.jamigo.counter.dao.CounterRepository;
 import tw.idv.leo.com.jamigo.counter.model.Counter;
 import tw.idv.leo.com.jamigo.counter.service.CounterService;
@@ -31,9 +30,6 @@ public class CounterController {
 	private CounterRepository counterRepository;
 	@Autowired
 	private CounterService counterService;
-
-	
-	
 
 	// ========================== 查櫃位資料 ===========================
 
@@ -94,7 +90,7 @@ public class CounterController {
 	}
 
 	// =========================== 更新櫃位圖片 ===================================
-	
+
 	@PutMapping("/update/counterPic/{counterNo}")
 	public ResponseEntity<String> updateCounterPic(@PathVariable Integer counterNo,
 			@RequestParam("counterPic") MultipartFile counterPic) {
@@ -109,13 +105,17 @@ public class CounterController {
 		}
 	}
 	// =========================== 櫃位忘記密碼 ===================================
-	
-	@PostMapping("/counterMail")
-    public void forgetPass(@RequestBody Counter counter) {
-		counterService.forget(counter);
 
-    }
-	
+	@PostMapping("/counterMail")
+	public ResponseEntity<String> forgetPass(@RequestBody Counter counter) {
+		try {
+			counterService.forget(counter);
+			return ResponseEntity.ok("信件已發出");
+		} catch (NoSuchElementException e) {
+			return ResponseEntity.status(HttpStatus.NOT_FOUND).body("找不到櫃位");
+		}
+
+	}
 
 	// ========================== 登出 ==========================
 

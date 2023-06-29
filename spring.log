@@ -1,827 +1,477 @@
-2023-06-29 13:37:06.372 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 9684 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 13:37:06.376 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 13:37:06.420 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-29 13:37:06.420 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-29 13:37:07.074 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 13:37:07.120 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 39 ms. Found 5 JPA repository interfaces.
-2023-06-29 13:37:07.647 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 13:37:07.657 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 13:37:07.657 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 13:37:07.824 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 13:37:07.830 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 13:37:07.830 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 1410 ms
-2023-06-29 13:37:07.992 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
-2023-06-29 13:37:08.262 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
-2023-06-29 13:37:08.300 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 13:37:08.358 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-06-29 13:37:08.512 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-06-29 13:37:08.615 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 13:37:09.067 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 13:37:09.075 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 13:37:09.460 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 13:37:09.559 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 13:37:09.797 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 13:37:09.834 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 13:37:09.842 [INFO] [restartedMain] [61] Started S456Application in 3.744 seconds (JVM running for 4.524)
-2023-06-29 13:37:13.927 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 13:37:13.927 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 13:37:13.928 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 1 ms
-2023-06-29 13:49:20.532 [INFO] [RMI TCP Connection(20)-127.0.0.1] [159] Application shutdown requested.
-2023-06-29 13:49:20.541 [INFO] [RMI TCP Connection(20)-127.0.0.1] [173] Stopping service [Tomcat]
-2023-06-29 13:49:20.542 [INFO] [RMI TCP Connection(20)-127.0.0.1] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 13:49:20.550 [INFO] [RMI TCP Connection(20)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 13:49:20.552 [INFO] [RMI TCP Connection(20)-127.0.0.1] [350] HikariPool-1 - Shutdown initiated...
-2023-06-29 13:49:20.556 [INFO] [RMI TCP Connection(20)-127.0.0.1] [352] HikariPool-1 - Shutdown completed.
-2023-06-29 13:49:22.027 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 19332 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 13:49:22.028 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 13:49:22.059 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-29 13:49:22.059 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-29 13:49:22.427 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 13:49:22.471 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 37 ms. Found 5 JPA repository interfaces.
-2023-06-29 13:49:22.877 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 13:49:22.883 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 13:49:22.884 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 13:49:23.020 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 13:49:23.028 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 13:49:23.028 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 969 ms
-2023-06-29 13:49:23.243 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
-2023-06-29 13:49:23.441 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
-2023-06-29 13:49:23.478 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 13:49:23.515 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-06-29 13:49:23.633 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-06-29 13:49:23.700 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 13:49:24.095 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 13:49:24.102 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 13:49:24.466 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 13:49:24.555 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 13:49:24.722 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 13:49:24.753 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 13:49:24.761 [INFO] [restartedMain] [61] Started S456Application in 2.989 seconds (JVM running for 3.45)
-2023-06-29 13:49:46.533 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 13:49:46.533 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 13:49:46.533 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 0 ms
-2023-06-29 13:55:51.669 [INFO] [RMI TCP Connection(16)-127.0.0.1] [159] Application shutdown requested.
-2023-06-29 13:55:51.676 [INFO] [RMI TCP Connection(16)-127.0.0.1] [173] Stopping service [Tomcat]
-2023-06-29 13:55:51.677 [INFO] [RMI TCP Connection(16)-127.0.0.1] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 13:55:51.718 [INFO] [RMI TCP Connection(16)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 13:55:51.720 [INFO] [RMI TCP Connection(16)-127.0.0.1] [350] HikariPool-1 - Shutdown initiated...
-2023-06-29 13:55:51.724 [INFO] [RMI TCP Connection(16)-127.0.0.1] [352] HikariPool-1 - Shutdown completed.
-2023-06-29 16:07:06.521 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 7756 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 16:07:06.522 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 16:07:06.555 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-29 16:07:06.555 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-29 16:07:06.931 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 16:07:06.972 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 34 ms. Found 5 JPA repository interfaces.
-2023-06-29 16:07:07.359 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 16:07:07.366 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 16:07:07.366 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 16:07:07.499 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 16:07:07.505 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 16:07:07.505 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 949 ms
-2023-06-29 16:07:07.637 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
-2023-06-29 16:07:07.833 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
-2023-06-29 16:07:07.864 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 16:07:07.891 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-06-29 16:07:07.996 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-06-29 16:07:08.056 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 16:07:08.398 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 16:07:08.404 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 16:07:08.760 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 16:07:08.851 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 16:07:09.026 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 16:07:09.057 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 16:07:09.064 [INFO] [restartedMain] [61] Started S456Application in 2.789 seconds (JVM running for 3.253)
-2023-06-29 16:07:14.339 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 16:07:14.339 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 16:07:14.339 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 0 ms
-2023-06-29 16:27:23.687 [INFO] [RMI TCP Connection(28)-127.0.0.1] [159] Application shutdown requested.
-2023-06-29 16:27:23.696 [INFO] [RMI TCP Connection(28)-127.0.0.1] [173] Stopping service [Tomcat]
-2023-06-29 16:27:23.697 [INFO] [RMI TCP Connection(28)-127.0.0.1] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 16:27:23.702 [INFO] [RMI TCP Connection(28)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 16:27:23.705 [INFO] [RMI TCP Connection(28)-127.0.0.1] [350] HikariPool-1 - Shutdown initiated...
-2023-06-29 16:27:23.708 [INFO] [RMI TCP Connection(28)-127.0.0.1] [352] HikariPool-1 - Shutdown completed.
-2023-06-29 21:55:50.219 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 11480 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 21:55:50.220 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 21:55:50.277 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-29 21:55:50.277 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-29 21:55:50.856 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 21:55:50.925 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 59 ms. Found 5 JPA repository interfaces.
-2023-06-29 21:55:51.592 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 21:55:51.601 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 21:55:51.602 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 21:55:51.802 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 21:55:51.810 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 21:55:51.811 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 1534 ms
-2023-06-29 21:55:52.010 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
-2023-06-29 21:55:52.302 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
-2023-06-29 21:55:52.347 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 21:55:52.391 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-06-29 21:55:52.567 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-06-29 21:55:52.648 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 21:55:53.150 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 21:55:53.159 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 21:55:53.630 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 21:55:53.768 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 21:55:54.054 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 21:55:54.102 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 21:55:54.112 [INFO] [restartedMain] [61] Started S456Application in 4.263 seconds (JVM running for 5.056)
-2023-06-29 22:02:27.884 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 22:02:27.885 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 22:02:27.888 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 2 ms
-2023-06-29 22:03:40.376 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 22:03:40.388 [INFO] [Thread-6] [173] Stopping service [Tomcat]
-2023-06-29 22:03:40.389 [INFO] [Thread-6] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 22:03:40.402 [INFO] [Thread-6] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 22:03:40.405 [INFO] [Thread-6] [350] HikariPool-1 - Shutdown initiated...
-2023-06-29 22:03:40.412 [INFO] [Thread-6] [352] HikariPool-1 - Shutdown completed.
-2023-06-29 22:03:40.496 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 11480 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 22:03:40.496 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 22:03:40.667 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 22:03:40.685 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2023-06-29 22:03:40.786 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 22:03:40.787 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 22:03:40.787 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 22:03:40.854 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 22:03:40.856 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 22:03:40.857 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 358 ms
-2023-06-29 22:03:40.900 [INFO] [restartedMain] [110] HikariPool-2 - Starting...
-2023-06-29 22:03:40.921 [INFO] [restartedMain] [123] HikariPool-2 - Start completed.
-2023-06-29 22:03:40.929 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 22:03:40.933 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 22:03:40.994 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 22:03:40.995 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 22:03:41.137 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 22:03:41.174 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 22:03:41.226 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 22:03:41.238 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 22:03:41.244 [INFO] [restartedMain] [61] Started S456Application in 0.774 seconds (JVM running for 472.188)
-2023-06-29 22:03:41.246 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 22:03:45.195 [INFO] [http-nio-8080-exec-2] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 22:03:45.196 [INFO] [http-nio-8080-exec-2] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 22:03:45.196 [INFO] [http-nio-8080-exec-2] [547] Completed initialization in 0 ms
-2023-06-29 22:04:01.895 [WARN] [http-nio-8080-exec-3] [208] Resolved [org.springframework.web.HttpRequestMethodNotSupportedException: Request method 'GET' not supported]
-2023-06-29 22:05:28.469 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 22:05:28.477 [INFO] [Thread-8] [173] Stopping service [Tomcat]
-2023-06-29 22:05:28.477 [INFO] [Thread-8] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 22:05:28.483 [INFO] [Thread-8] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 22:05:28.485 [INFO] [Thread-8] [350] HikariPool-2 - Shutdown initiated...
-2023-06-29 22:05:28.488 [INFO] [Thread-8] [352] HikariPool-2 - Shutdown completed.
-2023-06-29 22:05:28.560 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 11480 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 22:05:28.561 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 22:05:28.713 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 22:05:28.732 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2023-06-29 22:05:28.805 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 22:05:28.806 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 22:05:28.806 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 22:05:28.871 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 22:05:28.874 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 22:05:28.875 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 312 ms
-2023-06-29 22:05:28.923 [INFO] [restartedMain] [110] HikariPool-3 - Starting...
-2023-06-29 22:05:28.943 [INFO] [restartedMain] [123] HikariPool-3 - Start completed.
-2023-06-29 22:05:28.949 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 22:05:28.954 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 22:05:29.002 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 22:05:29.002 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 22:05:29.142 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 22:05:29.174 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 22:05:29.222 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 22:05:29.239 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 22:05:29.244 [INFO] [restartedMain] [61] Started S456Application in 0.707 seconds (JVM running for 580.187)
-2023-06-29 22:05:29.245 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 22:05:39.152 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 22:05:39.153 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 22:05:39.153 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 0 ms
-2023-06-29 22:05:39.228 [WARN] [http-nio-8080-exec-1] [208] Resolved [org.springframework.http.converter.HttpMessageNotReadableException: JSON parse error: Unexpected character ('}' (code 125)): was expecting double-quote to start field name; nested exception is com.fasterxml.jackson.core.JsonParseException: Unexpected character ('}' (code 125)): was expecting double-quote to start field name<EOL> at [Source: (org.springframework.util.StreamUtils$NonClosingInputStream); line: 6, column: 2]]
-2023-06-29 22:06:29.122 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 22:06:29.131 [INFO] [Thread-13] [173] Stopping service [Tomcat]
-2023-06-29 22:06:29.132 [INFO] [Thread-13] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 22:06:29.136 [INFO] [Thread-13] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 22:06:29.137 [INFO] [Thread-13] [350] HikariPool-3 - Shutdown initiated...
-2023-06-29 22:06:29.139 [INFO] [Thread-13] [352] HikariPool-3 - Shutdown completed.
-2023-06-29 22:06:29.212 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 11480 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 22:06:29.213 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 22:06:29.368 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 22:06:29.386 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
-2023-06-29 22:06:29.456 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 22:06:29.457 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 22:06:29.457 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 22:06:29.511 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 22:06:29.513 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 22:06:29.513 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 298 ms
-2023-06-29 22:06:29.554 [INFO] [restartedMain] [110] HikariPool-4 - Starting...
-2023-06-29 22:06:29.567 [INFO] [restartedMain] [123] HikariPool-4 - Start completed.
-2023-06-29 22:06:29.573 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 22:06:29.577 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 22:06:29.622 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 22:06:29.622 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 22:06:29.756 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 22:06:29.783 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 22:06:29.821 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 22:06:29.832 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 22:06:29.838 [INFO] [restartedMain] [61] Started S456Application in 0.646 seconds (JVM running for 640.782)
-2023-06-29 22:06:29.840 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 22:07:03.105 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 22:07:03.106 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 22:07:03.106 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 0 ms
-2023-06-29 22:07:43.025 [INFO] [RMI TCP Connection(30)-127.0.0.1] [159] Application shutdown requested.
-2023-06-29 22:07:43.035 [INFO] [RMI TCP Connection(30)-127.0.0.1] [173] Stopping service [Tomcat]
-2023-06-29 22:07:43.037 [INFO] [RMI TCP Connection(30)-127.0.0.1] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 22:07:43.064 [INFO] [RMI TCP Connection(30)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 22:07:43.065 [INFO] [RMI TCP Connection(30)-127.0.0.1] [350] HikariPool-4 - Shutdown initiated...
-2023-06-29 22:07:43.069 [INFO] [RMI TCP Connection(30)-127.0.0.1] [352] HikariPool-4 - Shutdown completed.
-2023-06-29 23:12:00.750 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 6736 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:12:00.752 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:12:00.799 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-29 23:12:00.799 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-29 23:12:01.383 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:12:01.440 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 49 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:12:02.021 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:12:02.032 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:12:02.032 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:12:02.238 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:12:02.249 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:12:02.249 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 1449 ms
-2023-06-29 23:12:02.455 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
-2023-06-29 23:12:02.757 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
-2023-06-29 23:12:02.807 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:12:02.852 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-06-29 23:12:03.028 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-06-29 23:12:03.132 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:12:03.663 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:12:03.672 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:12:04.125 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:12:04.251 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:12:04.548 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:12:04.597 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:12:04.608 [INFO] [restartedMain] [61] Started S456Application in 4.267 seconds (JVM running for 5.004)
-2023-06-29 23:12:13.490 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 23:12:13.490 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 23:12:13.492 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 2 ms
-2023-06-29 23:13:13.248 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 23:13:13.261 [INFO] [Thread-6] [173] Stopping service [Tomcat]
-2023-06-29 23:13:13.263 [INFO] [Thread-6] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 23:13:13.269 [INFO] [Thread-6] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:13:13.273 [INFO] [Thread-6] [350] HikariPool-1 - Shutdown initiated...
-2023-06-29 23:13:13.278 [INFO] [Thread-6] [352] HikariPool-1 - Shutdown completed.
-2023-06-29 23:13:13.350 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 6736 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:13:13.350 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:13:13.513 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:13:13.535 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:13:13.601 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:13:13.602 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:13:13.603 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:13:13.667 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:13:13.669 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:13:13.669 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 317 ms
-2023-06-29 23:13:13.702 [INFO] [restartedMain] [110] HikariPool-2 - Starting...
-2023-06-29 23:13:13.717 [INFO] [restartedMain] [123] HikariPool-2 - Start completed.
-2023-06-29 23:13:13.722 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:13:13.728 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:13:13.784 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:13:13.784 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:13:13.917 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:13:13.953 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:13:13.992 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:13:14.004 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:13:14.010 [INFO] [restartedMain] [61] Started S456Application in 0.681 seconds (JVM running for 74.405)
-2023-06-29 23:13:14.013 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:13:27.869 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 23:13:27.882 [INFO] [Thread-8] [173] Stopping service [Tomcat]
-2023-06-29 23:13:27.888 [INFO] [Thread-8] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:13:27.888 [INFO] [Thread-8] [350] HikariPool-2 - Shutdown initiated...
-2023-06-29 23:13:27.892 [INFO] [Thread-8] [352] HikariPool-2 - Shutdown completed.
-2023-06-29 23:13:27.976 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 6736 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:13:27.976 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:13:28.119 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:13:28.140 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:13:28.202 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:13:28.202 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:13:28.202 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:13:28.256 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:13:28.258 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:13:28.258 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 280 ms
-2023-06-29 23:13:28.288 [INFO] [restartedMain] [110] HikariPool-3 - Starting...
-2023-06-29 23:13:28.300 [INFO] [restartedMain] [123] HikariPool-3 - Start completed.
-2023-06-29 23:13:28.305 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:13:28.309 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:13:28.358 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:13:28.359 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:13:28.484 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:13:28.513 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:13:28.549 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:13:28.559 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:13:28.566 [INFO] [restartedMain] [61] Started S456Application in 0.61 seconds (JVM running for 88.961)
-2023-06-29 23:13:28.567 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:16:46.988 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-2023-06-29 23:16:46.997 [INFO] [Thread-13] [173] Stopping service [Tomcat]
-2023-06-29 23:16:47.001 [INFO] [Thread-13] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:16:47.002 [INFO] [Thread-13] [350] HikariPool-3 - Shutdown initiated...
-2023-06-29 23:16:47.006 [INFO] [Thread-13] [352] HikariPool-3 - Shutdown completed.
-2023-06-29 23:16:47.066 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 6736 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:16:47.066 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:16:47.227 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:16:47.247 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:16:47.316 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:16:47.317 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:16:47.317 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:16:47.374 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:16:47.376 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:16:47.376 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 308 ms
-2023-06-29 23:16:47.408 [INFO] [restartedMain] [110] HikariPool-4 - Starting...
-2023-06-29 23:16:47.421 [INFO] [restartedMain] [123] HikariPool-4 - Start completed.
-2023-06-29 23:16:47.426 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:16:47.432 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:16:47.473 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:16:47.474 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:16:47.641 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:16:47.670 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:16:47.708 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:16:47.719 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:16:47.725 [INFO] [restartedMain] [61] Started S456Application in 0.682 seconds (JVM running for 288.121)
-2023-06-29 23:16:47.727 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:16:52.213 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 23:16:52.214 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 23:16:52.215 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 1 ms
-2023-06-29 23:20:50.079 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 1 deletion, 1 modification)
-2023-06-29 23:20:50.089 [INFO] [Thread-18] [173] Stopping service [Tomcat]
-2023-06-29 23:20:50.090 [INFO] [Thread-18] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 23:20:50.094 [INFO] [Thread-18] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:20:50.095 [INFO] [Thread-18] [350] HikariPool-4 - Shutdown initiated...
-2023-06-29 23:20:50.098 [INFO] [Thread-18] [352] HikariPool-4 - Shutdown completed.
-2023-06-29 23:20:50.171 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 6736 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:20:50.171 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:20:50.319 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:20:50.338 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:20:50.401 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:20:50.401 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:20:50.401 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:20:50.485 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:20:50.487 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:20:50.487 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 314 ms
-2023-06-29 23:20:50.518 [INFO] [restartedMain] [110] HikariPool-5 - Starting...
-2023-06-29 23:20:50.533 [INFO] [restartedMain] [123] HikariPool-5 - Start completed.
-2023-06-29 23:20:50.538 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:20:50.543 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:20:50.580 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:20:50.581 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:20:50.623 [WARN] [restartedMain] [591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'counterController': Unsatisfied dependency expressed through field 'sendEmail4CounterForget'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sendEmail4CounterForget' defined in file [C:\sts4-workspace\s456\target\classes\tw\idv\leo\com\jamigo\counter\contrller\SendEmail4CounterForget.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	Syntax error, insert "Finally" to complete BlockStatements
-	Syntax error on token "catch", Identifier expected
-	Syntax error on token "}", delete this token
-
-2023-06-29 23:20:50.624 [INFO] [restartedMain] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:20:50.624 [INFO] [restartedMain] [350] HikariPool-5 - Shutdown initiated...
-2023-06-29 23:20:50.625 [INFO] [restartedMain] [352] HikariPool-5 - Shutdown completed.
-2023-06-29 23:20:50.626 [INFO] [restartedMain] [173] Stopping service [Tomcat]
-2023-06-29 23:20:50.633 [INFO] [restartedMain] [136] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-06-29 23:20:50.652 [ERROR] [restartedMain] [821] Application run failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'counterController': Unsatisfied dependency expressed through field 'sendEmail4CounterForget'; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sendEmail4CounterForget' defined in file [C:\sts4-workspace\s456\target\classes\tw\idv\leo\com\jamigo\counter\contrller\SendEmail4CounterForget.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	Syntax error, insert "Finally" to complete BlockStatements
-	Syntax error on token "catch", Identifier expected
-	Syntax error on token "}", delete this token
-
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:660) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:119) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1431) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:619) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:955) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:920) ~[spring-context-5.3.27.jar:5.3.27]
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.27.jar:5.3.27]
-	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:731) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:307) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1303) ~[spring-boot-2.7.12.jar:2.7.12]
-	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1292) ~[spring-boot-2.7.12.jar:2.7.12]
-	at tw.idv.leo.S456Application.main(S456Application.java:10) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
-	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
-	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.12.jar:2.7.12]
-Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'sendEmail4CounterForget' defined in file [C:\sts4-workspace\s456\target\classes\tw\idv\leo\com\jamigo\counter\contrller\SendEmail4CounterForget.class]: Instantiation of bean failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	Syntax error, insert "Finally" to complete BlockStatements
-	Syntax error on token "catch", Identifier expected
-	Syntax error on token "}", delete this token
-
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1334) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1232) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:582) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1391) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1311) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.resolveFieldValue(AutowiredAnnotationBeanPostProcessor.java:657) ~[spring-beans-5.3.27.jar:5.3.27]
-	... 25 common frames omitted
-Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget]: Constructor threw exception; nested exception is java.lang.Error: Unresolved compilation problems: 
-	Syntax error, insert "Finally" to complete BlockStatements
-	Syntax error on token "catch", Identifier expected
-	Syntax error on token "}", delete this token
-
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:224) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:87) ~[spring-beans-5.3.27.jar:5.3.27]
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateBean(AbstractAutowireCapableBeanFactory.java:1326) ~[spring-beans-5.3.27.jar:5.3.27]
-	... 36 common frames omitted
-Caused by: java.lang.Error: Unresolved compilation problems: 
-	Syntax error, insert "Finally" to complete BlockStatements
-	Syntax error on token "catch", Identifier expected
-	Syntax error on token "}", delete this token
-
-	at tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget.<init>(SendEmail4CounterForget.java:52) ~[classes/:na]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method) ~[na:na]
-	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:77) ~[na:na]
-	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:499) ~[na:na]
-	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:480) ~[na:na]
-	at org.springframework.beans.BeanUtils.instantiateClass(BeanUtils.java:211) ~[spring-beans-5.3.27.jar:5.3.27]
-	... 38 common frames omitted
-2023-06-29 23:21:01.234 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 6736 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:21:01.234 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:21:01.367 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:21:01.385 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:21:01.452 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:21:01.452 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:21:01.452 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:21:01.508 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:21:01.510 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:21:01.511 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 275 ms
-2023-06-29 23:21:01.541 [INFO] [restartedMain] [110] HikariPool-6 - Starting...
-2023-06-29 23:21:01.553 [INFO] [restartedMain] [123] HikariPool-6 - Start completed.
-2023-06-29 23:21:01.559 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:21:01.563 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:21:01.630 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:21:01.631 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:21:01.754 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:21:01.798 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:21:01.850 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:21:01.862 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:21:01.867 [INFO] [restartedMain] [61] Started S456Application in 0.65 seconds (JVM running for 542.263)
-2023-06-29 23:21:01.869 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:25:14.428 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 23:25:14.438 [INFO] [Thread-23] [173] Stopping service [Tomcat]
-2023-06-29 23:25:14.441 [INFO] [Thread-23] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:25:14.442 [INFO] [Thread-23] [350] HikariPool-6 - Shutdown initiated...
-2023-06-29 23:25:14.446 [INFO] [Thread-23] [352] HikariPool-6 - Shutdown completed.
-2023-06-29 23:25:14.506 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 6736 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:25:14.506 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:25:14.696 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:25:14.718 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 22 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:25:14.795 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:25:14.796 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:25:14.796 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:25:14.854 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:25:14.856 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:25:14.856 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 348 ms
-2023-06-29 23:25:14.888 [INFO] [restartedMain] [110] HikariPool-7 - Starting...
-2023-06-29 23:25:14.901 [INFO] [restartedMain] [123] HikariPool-7 - Start completed.
-2023-06-29 23:25:14.907 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:25:14.912 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:25:14.947 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:25:14.947 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:25:15.028 [WARN] [restartedMain] [591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'counterController': Unsatisfied dependency expressed through field 'counterService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'counterServiceimpl': Unsatisfied dependency expressed through field 'sendEmail4CounterForget'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sendEmail4CounterForget': Unsatisfied dependency expressed through field 'counterService'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'counterServiceimpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
-2023-06-29 23:25:15.028 [INFO] [restartedMain] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:25:15.029 [INFO] [restartedMain] [350] HikariPool-7 - Shutdown initiated...
-2023-06-29 23:25:15.031 [INFO] [restartedMain] [352] HikariPool-7 - Shutdown completed.
-2023-06-29 23:25:15.031 [INFO] [restartedMain] [173] Stopping service [Tomcat]
-2023-06-29 23:25:15.038 [INFO] [restartedMain] [136] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-06-29 23:25:15.043 [ERROR] [restartedMain] [40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The dependencies of some of the beans in the application context form a cycle:
-
-   counterController (field private tw.idv.leo.com.jamigo.counter.service.CounterService tw.idv.leo.com.jamigo.counter.contrller.CounterController.counterService)
-┌─────┐
-|  counterServiceimpl (field private tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget tw.idv.leo.com.jamigo.counter.service.CounterServiceimpl.sendEmail4CounterForget)
-↑     ↓
-|  sendEmail4CounterForget (field public tw.idv.leo.com.jamigo.counter.service.CounterService tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget.counterService)
-└─────┘
-
-
-Action:
-
-Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
-
-2023-06-29 23:25:25.950 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 6736 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:25:25.950 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:25:26.087 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:25:26.111 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 23 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:25:26.202 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:25:26.203 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:25:26.203 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:25:26.253 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:25:26.255 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:25:26.255 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 303 ms
-2023-06-29 23:25:26.284 [INFO] [restartedMain] [110] HikariPool-8 - Starting...
-2023-06-29 23:25:26.297 [INFO] [restartedMain] [123] HikariPool-8 - Start completed.
-2023-06-29 23:25:26.303 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:25:26.307 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:25:26.341 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:25:26.342 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:25:26.384 [WARN] [restartedMain] [591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'counterController': Unsatisfied dependency expressed through field 'counterService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'counterServiceimpl': Unsatisfied dependency expressed through field 'sendEmail4CounterForget'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sendEmail4CounterForget': Unsatisfied dependency expressed through field 'counterService'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'counterServiceimpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
-2023-06-29 23:25:26.385 [INFO] [restartedMain] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:25:26.385 [INFO] [restartedMain] [350] HikariPool-8 - Shutdown initiated...
-2023-06-29 23:25:26.386 [INFO] [restartedMain] [352] HikariPool-8 - Shutdown completed.
-2023-06-29 23:25:26.386 [INFO] [restartedMain] [173] Stopping service [Tomcat]
-2023-06-29 23:25:26.393 [INFO] [restartedMain] [136] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-06-29 23:25:26.396 [ERROR] [restartedMain] [40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The dependencies of some of the beans in the application context form a cycle:
-
-   counterController (field private tw.idv.leo.com.jamigo.counter.service.CounterService tw.idv.leo.com.jamigo.counter.contrller.CounterController.counterService)
-┌─────┐
-|  counterServiceimpl (field private tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget tw.idv.leo.com.jamigo.counter.service.CounterServiceimpl.sendEmail4CounterForget)
-↑     ↓
-|  sendEmail4CounterForget (field public tw.idv.leo.com.jamigo.counter.service.CounterService tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget.counterService)
-└─────┘
-
-
-Action:
-
-Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
-
-2023-06-29 23:34:11.005 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 3560 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:34:11.007 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:34:11.059 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-29 23:34:11.060 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-29 23:34:11.602 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:34:11.663 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 51 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:34:12.265 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:34:12.275 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:34:12.275 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:34:12.467 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:34:12.475 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:34:12.475 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 1415 ms
-2023-06-29 23:34:12.650 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
-2023-06-29 23:34:12.949 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
-2023-06-29 23:34:13.001 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:34:13.048 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-06-29 23:34:13.224 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-06-29 23:34:13.320 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:34:13.803 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:34:13.814 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:34:14.108 [WARN] [restartedMain] [591] Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'counterController': Unsatisfied dependency expressed through field 'counterService'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'counterServiceimpl': Unsatisfied dependency expressed through field 'sendEmail4CounterForget'; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sendEmail4CounterForget': Unsatisfied dependency expressed through field 'counterService'; nested exception is org.springframework.beans.factory.BeanCurrentlyInCreationException: Error creating bean with name 'counterServiceimpl': Requested bean is currently in creation: Is there an unresolvable circular reference?
-2023-06-29 23:34:14.109 [INFO] [restartedMain] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:34:14.114 [INFO] [restartedMain] [350] HikariPool-1 - Shutdown initiated...
-2023-06-29 23:34:14.119 [INFO] [restartedMain] [352] HikariPool-1 - Shutdown completed.
-2023-06-29 23:34:14.122 [INFO] [restartedMain] [173] Stopping service [Tomcat]
-2023-06-29 23:34:14.136 [INFO] [restartedMain] [136] 
-
-Error starting ApplicationContext. To display the conditions report re-run your application with 'debug' enabled.
-2023-06-29 23:34:14.159 [ERROR] [restartedMain] [40] 
-
-***************************
-APPLICATION FAILED TO START
-***************************
-
-Description:
-
-The dependencies of some of the beans in the application context form a cycle:
-
-   counterController (field private tw.idv.leo.com.jamigo.counter.service.CounterService tw.idv.leo.com.jamigo.counter.contrller.CounterController.counterService)
-┌─────┐
-|  counterServiceimpl (field private tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget tw.idv.leo.com.jamigo.counter.service.CounterServiceimpl.sendEmail4CounterForget)
-↑     ↓
-|  sendEmail4CounterForget (field public tw.idv.leo.com.jamigo.counter.service.CounterService tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget.counterService)
-└─────┘
-
-
-Action:
-
-Relying upon circular references is discouraged and they are prohibited by default. Update your application to remove the dependency cycle between beans. As a last resort, it may be possible to break the cycle automatically by setting spring.main.allow-circular-references to true.
-
-2023-06-29 23:35:29.237 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 8360 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:35:29.238 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:35:29.284 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
-2023-06-29 23:35:29.285 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
-2023-06-29 23:35:29.846 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:35:29.909 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 52 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:35:30.494 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:35:30.503 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:35:30.504 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:35:30.687 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:35:30.694 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:35:30.694 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 1409 ms
-2023-06-29 23:35:30.876 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
-2023-06-29 23:35:31.137 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
-2023-06-29 23:35:31.179 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:35:31.219 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
-2023-06-29 23:35:31.367 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
-2023-06-29 23:35:31.448 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:35:31.903 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:35:31.912 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:35:32.372 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:35:32.490 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:35:32.746 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:35:32.789 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:35:32.799 [INFO] [restartedMain] [61] Started S456Application in 3.91 seconds (JVM running for 4.605)
-2023-06-29 23:35:38.874 [INFO] [http-nio-8080-exec-4] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 23:35:38.875 [INFO] [http-nio-8080-exec-4] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 23:35:38.876 [INFO] [http-nio-8080-exec-4] [547] Completed initialization in 1 ms
-2023-06-29 23:36:40.467 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 23:36:40.479 [INFO] [Thread-6] [173] Stopping service [Tomcat]
-2023-06-29 23:36:40.480 [INFO] [Thread-6] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 23:36:40.491 [INFO] [Thread-6] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:36:40.497 [INFO] [Thread-6] [350] HikariPool-1 - Shutdown initiated...
-2023-06-29 23:36:40.503 [INFO] [Thread-6] [352] HikariPool-1 - Shutdown completed.
-2023-06-29 23:36:40.603 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 8360 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:36:40.604 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:36:40.794 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:36:40.816 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:36:40.896 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:36:40.897 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:36:40.897 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:36:40.960 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:36:40.962 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:36:40.962 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 356 ms
-2023-06-29 23:36:40.995 [INFO] [restartedMain] [110] HikariPool-2 - Starting...
-2023-06-29 23:36:41.010 [INFO] [restartedMain] [123] HikariPool-2 - Start completed.
-2023-06-29 23:36:41.015 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:36:41.021 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:36:41.074 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:36:41.074 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:36:41.203 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:36:41.232 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:36:41.273 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:36:41.283 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:36:41.289 [INFO] [restartedMain] [61] Started S456Application in 0.712 seconds (JVM running for 73.095)
-2023-06-29 23:36:41.293 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:37:07.570 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 23:37:07.577 [INFO] [Thread-8] [173] Stopping service [Tomcat]
-2023-06-29 23:37:07.583 [INFO] [Thread-8] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:37:07.584 [INFO] [Thread-8] [350] HikariPool-2 - Shutdown initiated...
-2023-06-29 23:37:07.587 [INFO] [Thread-8] [352] HikariPool-2 - Shutdown completed.
-2023-06-29 23:37:07.649 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 8360 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:37:07.651 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:37:07.792 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:37:07.811 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:37:07.871 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:37:07.871 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:37:07.872 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:37:07.921 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:37:07.923 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:37:07.923 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 271 ms
-2023-06-29 23:37:07.954 [INFO] [restartedMain] [110] HikariPool-3 - Starting...
-2023-06-29 23:37:07.971 [INFO] [restartedMain] [123] HikariPool-3 - Start completed.
-2023-06-29 23:37:07.979 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:37:07.985 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:37:08.046 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:37:08.047 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:37:08.165 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:37:08.192 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:37:08.233 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:37:08.244 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:37:08.250 [INFO] [restartedMain] [61] Started S456Application in 0.622 seconds (JVM running for 100.057)
-2023-06-29 23:37:08.253 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:37:12.472 [INFO] [http-nio-8080-exec-3] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 23:37:12.473 [INFO] [http-nio-8080-exec-3] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 23:37:12.474 [INFO] [http-nio-8080-exec-3] [547] Completed initialization in 1 ms
-2023-06-29 23:39:56.801 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-2023-06-29 23:39:56.810 [INFO] [Thread-13] [173] Stopping service [Tomcat]
-2023-06-29 23:39:56.810 [INFO] [Thread-13] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 23:39:56.814 [INFO] [Thread-13] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:39:56.815 [INFO] [Thread-13] [350] HikariPool-3 - Shutdown initiated...
-2023-06-29 23:39:56.817 [INFO] [Thread-13] [352] HikariPool-3 - Shutdown completed.
-2023-06-29 23:39:56.889 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 8360 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:39:56.889 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:39:57.030 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:39:57.048 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:39:57.117 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:39:57.118 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:39:57.118 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:39:57.177 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:39:57.178 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:39:57.178 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 286 ms
-2023-06-29 23:39:57.208 [INFO] [restartedMain] [110] HikariPool-4 - Starting...
-2023-06-29 23:39:57.224 [INFO] [restartedMain] [123] HikariPool-4 - Start completed.
-2023-06-29 23:39:57.229 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:39:57.234 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:39:57.273 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:39:57.273 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:39:57.408 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:39:57.442 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:39:57.487 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:39:57.497 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:39:57.502 [INFO] [restartedMain] [61] Started S456Application in 0.636 seconds (JVM running for 269.308)
-2023-06-29 23:39:57.504 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:40:09.360 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 23:40:09.361 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 23:40:09.362 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 1 ms
-2023-06-29 23:44:09.525 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 23:44:09.534 [INFO] [Thread-18] [173] Stopping service [Tomcat]
-2023-06-29 23:44:09.534 [INFO] [Thread-18] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 23:44:09.538 [INFO] [Thread-18] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:44:09.539 [INFO] [Thread-18] [350] HikariPool-4 - Shutdown initiated...
-2023-06-29 23:44:09.542 [INFO] [Thread-18] [352] HikariPool-4 - Shutdown completed.
-2023-06-29 23:44:09.602 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 8360 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:44:09.602 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:44:09.742 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:44:09.760 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 16 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:44:09.831 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:44:09.832 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:44:09.832 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:44:09.893 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:44:09.895 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:44:09.895 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 291 ms
-2023-06-29 23:44:09.927 [INFO] [restartedMain] [110] HikariPool-5 - Starting...
-2023-06-29 23:44:09.939 [INFO] [restartedMain] [123] HikariPool-5 - Start completed.
-2023-06-29 23:44:09.944 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:44:09.948 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:44:09.980 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:44:09.980 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:44:10.126 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:44:10.154 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:44:10.189 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:44:10.199 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:44:10.204 [INFO] [restartedMain] [61] Started S456Application in 0.622 seconds (JVM running for 522.01)
-2023-06-29 23:44:10.206 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:44:22.206 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
-2023-06-29 23:44:22.208 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
-2023-06-29 23:44:22.208 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 0 ms
-2023-06-29 23:45:02.522 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
-2023-06-29 23:45:02.532 [INFO] [Thread-23] [173] Stopping service [Tomcat]
-2023-06-29 23:45:02.533 [INFO] [Thread-23] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
-2023-06-29 23:45:02.536 [INFO] [Thread-23] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:45:02.537 [INFO] [Thread-23] [350] HikariPool-5 - Shutdown initiated...
-2023-06-29 23:45:02.539 [INFO] [Thread-23] [352] HikariPool-5 - Shutdown completed.
-2023-06-29 23:45:02.608 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 8360 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:45:02.608 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:45:02.742 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:45:02.762 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:45:02.828 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:45:02.828 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:45:02.828 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:45:02.873 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:45:02.875 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:45:02.875 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 264 ms
-2023-06-29 23:45:02.905 [INFO] [restartedMain] [110] HikariPool-6 - Starting...
-2023-06-29 23:45:02.917 [INFO] [restartedMain] [123] HikariPool-6 - Start completed.
-2023-06-29 23:45:02.922 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:45:02.928 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:45:02.972 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:45:02.973 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:45:03.091 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:45:03.119 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:45:03.154 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:45:03.163 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:45:03.170 [INFO] [restartedMain] [61] Started S456Application in 0.581 seconds (JVM running for 574.977)
-2023-06-29 23:45:03.173 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:45:07.107 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
-2023-06-29 23:45:07.115 [INFO] [Thread-28] [173] Stopping service [Tomcat]
-2023-06-29 23:45:07.119 [INFO] [Thread-28] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:45:07.120 [INFO] [Thread-28] [350] HikariPool-6 - Shutdown initiated...
-2023-06-29 23:45:07.123 [INFO] [Thread-28] [352] HikariPool-6 - Shutdown completed.
-2023-06-29 23:45:07.189 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 8360 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
-2023-06-29 23:45:07.189 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
-2023-06-29 23:45:07.340 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
-2023-06-29 23:45:07.356 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
-2023-06-29 23:45:07.410 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
-2023-06-29 23:45:07.411 [INFO] [restartedMain] [173] Starting service [Tomcat]
-2023-06-29 23:45:07.411 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
-2023-06-29 23:45:07.453 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
-2023-06-29 23:45:07.454 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
-2023-06-29 23:45:07.455 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 265 ms
-2023-06-29 23:45:07.486 [INFO] [restartedMain] [110] HikariPool-7 - Starting...
-2023-06-29 23:45:07.502 [INFO] [restartedMain] [123] HikariPool-7 - Start completed.
-2023-06-29 23:45:07.507 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
-2023-06-29 23:45:07.511 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
-2023-06-29 23:45:07.541 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
-2023-06-29 23:45:07.541 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:45:07.654 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
-2023-06-29 23:45:07.679 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
-2023-06-29 23:45:07.718 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
-2023-06-29 23:45:07.729 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
-2023-06-29 23:45:07.735 [INFO] [restartedMain] [61] Started S456Application in 0.564 seconds (JVM running for 579.541)
-2023-06-29 23:45:07.736 [INFO] [restartedMain] [63] Condition evaluation unchanged
-2023-06-29 23:45:10.925 [INFO] [RMI TCP Connection(30)-127.0.0.1] [159] Application shutdown requested.
-2023-06-29 23:45:10.932 [INFO] [RMI TCP Connection(30)-127.0.0.1] [173] Stopping service [Tomcat]
-2023-06-29 23:45:10.936 [INFO] [RMI TCP Connection(30)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
-2023-06-29 23:45:10.936 [INFO] [RMI TCP Connection(30)-127.0.0.1] [350] HikariPool-7 - Shutdown initiated...
-2023-06-29 23:45:10.939 [INFO] [RMI TCP Connection(30)-127.0.0.1] [352] HikariPool-7 - Shutdown completed.
+2023-06-30 00:00:51.413 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-30 00:00:51.430 [INFO] [Thread-6] [173] Stopping service [Tomcat]
+2023-06-30 00:00:51.432 [INFO] [Thread-6] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 00:00:51.440 [INFO] [Thread-6] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:00:51.443 [INFO] [Thread-6] [350] HikariPool-1 - Shutdown initiated...
+2023-06-30 00:00:51.448 [INFO] [Thread-6] [352] HikariPool-1 - Shutdown completed.
+2023-06-30 00:00:51.523 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 18956 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 00:00:51.524 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 00:00:51.688 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 00:00:51.709 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 20 ms. Found 5 JPA repository interfaces.
+2023-06-30 00:00:51.775 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 00:00:51.776 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 00:00:51.776 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 00:00:51.838 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 00:00:51.840 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 00:00:51.840 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 314 ms
+2023-06-30 00:00:51.874 [INFO] [restartedMain] [110] HikariPool-2 - Starting...
+2023-06-30 00:00:51.887 [INFO] [restartedMain] [123] HikariPool-2 - Start completed.
+2023-06-30 00:00:51.892 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 00:00:51.896 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 00:00:51.950 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 00:00:51.951 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:00:52.085 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 00:00:52.113 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 00:00:52.151 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 00:00:52.161 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 00:00:52.166 [INFO] [restartedMain] [61] Started S456Application in 0.665 seconds (JVM running for 68.935)
+2023-06-30 00:00:52.169 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 00:01:02.280 [INFO] [http-nio-8080-exec-2] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 00:01:02.280 [INFO] [http-nio-8080-exec-2] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 00:01:02.281 [INFO] [http-nio-8080-exec-2] [547] Completed initialization in 1 ms
+2023-06-30 00:02:09.746 [INFO] [RMI TCP Connection(15)-127.0.0.1] [159] Application shutdown requested.
+2023-06-30 00:02:09.754 [INFO] [RMI TCP Connection(15)-127.0.0.1] [173] Stopping service [Tomcat]
+2023-06-30 00:02:09.755 [INFO] [RMI TCP Connection(15)-127.0.0.1] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 00:02:09.760 [INFO] [RMI TCP Connection(15)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:02:09.760 [INFO] [RMI TCP Connection(15)-127.0.0.1] [350] HikariPool-2 - Shutdown initiated...
+2023-06-30 00:02:09.763 [INFO] [RMI TCP Connection(15)-127.0.0.1] [352] HikariPool-2 - Shutdown completed.
+2023-06-30 00:12:30.897 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 00:12:30.899 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 00:12:30.948 [INFO] [restartedMain] [255] Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2023-06-30 00:12:30.948 [INFO] [restartedMain] [255] For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2023-06-30 00:12:31.522 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 00:12:31.581 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 48 ms. Found 5 JPA repository interfaces.
+2023-06-30 00:12:32.132 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 00:12:32.143 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 00:12:32.144 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 00:12:32.328 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 00:12:32.335 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 00:12:32.336 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 1386 ms
+2023-06-30 00:12:32.504 [INFO] [restartedMain] [110] HikariPool-1 - Starting...
+2023-06-30 00:12:32.767 [INFO] [restartedMain] [123] HikariPool-1 - Start completed.
+2023-06-30 00:12:32.812 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 00:12:32.853 [INFO] [restartedMain] [44] HHH000412: Hibernate ORM core version 5.6.15.Final
+2023-06-30 00:12:32.999 [INFO] [restartedMain] [56] HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2023-06-30 00:12:33.085 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 00:12:33.573 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 00:12:33.583 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:12:34.054 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 00:12:34.201 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 00:12:34.496 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 00:12:34.537 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 00:12:34.547 [INFO] [restartedMain] [61] Started S456Application in 4.021 seconds (JVM running for 4.738)
+2023-06-30 00:12:38.177 [INFO] [http-nio-8080-exec-5] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 00:12:38.177 [INFO] [http-nio-8080-exec-5] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 00:12:38.179 [INFO] [http-nio-8080-exec-5] [547] Completed initialization in 2 ms
+2023-06-30 00:41:46.274 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 00:41:46.287 [INFO] [Thread-6] [173] Stopping service [Tomcat]
+2023-06-30 00:41:46.289 [INFO] [Thread-6] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 00:41:46.296 [INFO] [Thread-6] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:41:46.300 [INFO] [Thread-6] [350] HikariPool-1 - Shutdown initiated...
+2023-06-30 00:41:46.306 [INFO] [Thread-6] [352] HikariPool-1 - Shutdown completed.
+2023-06-30 00:41:46.375 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 00:41:46.377 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 00:41:46.540 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 00:41:46.559 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2023-06-30 00:41:46.639 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 00:41:46.640 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 00:41:46.640 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 00:41:46.706 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 00:41:46.708 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 00:41:46.709 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 330 ms
+2023-06-30 00:41:46.751 [INFO] [restartedMain] [110] HikariPool-2 - Starting...
+2023-06-30 00:41:46.766 [INFO] [restartedMain] [123] HikariPool-2 - Start completed.
+2023-06-30 00:41:46.773 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 00:41:46.781 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 00:41:46.877 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 00:41:46.882 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:41:47.022 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 00:41:47.056 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 00:41:47.105 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 00:41:47.117 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 00:41:47.124 [INFO] [restartedMain] [61] Started S456Application in 0.772 seconds (JVM running for 1757.315)
+2023-06-30 00:41:47.127 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 00:45:46.869 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-30 00:45:46.877 [INFO] [Thread-8] [173] Stopping service [Tomcat]
+2023-06-30 00:45:46.883 [INFO] [Thread-8] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:45:46.883 [INFO] [Thread-8] [350] HikariPool-2 - Shutdown initiated...
+2023-06-30 00:45:46.886 [INFO] [Thread-8] [352] HikariPool-2 - Shutdown completed.
+2023-06-30 00:45:46.993 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 00:45:46.993 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 00:45:47.158 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 00:45:47.176 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2023-06-30 00:45:47.252 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 00:45:47.252 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 00:45:47.253 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 00:45:47.317 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 00:45:47.320 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 00:45:47.322 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 326 ms
+2023-06-30 00:45:47.370 [INFO] [restartedMain] [110] HikariPool-3 - Starting...
+2023-06-30 00:45:47.385 [INFO] [restartedMain] [123] HikariPool-3 - Start completed.
+2023-06-30 00:45:47.391 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 00:45:47.397 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 00:45:47.447 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 00:45:47.447 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:45:47.591 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 00:45:47.624 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 00:45:47.664 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 00:45:47.675 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 00:45:47.682 [INFO] [restartedMain] [61] Started S456Application in 0.722 seconds (JVM running for 1997.872)
+2023-06-30 00:45:47.683 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 00:46:55.783 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-30 00:46:55.792 [INFO] [Thread-13] [173] Stopping service [Tomcat]
+2023-06-30 00:46:55.797 [INFO] [Thread-13] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:46:55.798 [INFO] [Thread-13] [350] HikariPool-3 - Shutdown initiated...
+2023-06-30 00:46:55.801 [INFO] [Thread-13] [352] HikariPool-3 - Shutdown completed.
+2023-06-30 00:46:55.868 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 00:46:55.869 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 00:46:56.011 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 00:46:56.029 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2023-06-30 00:46:56.099 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 00:46:56.099 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 00:46:56.099 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 00:46:56.154 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 00:46:56.155 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 00:46:56.155 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 284 ms
+2023-06-30 00:46:56.185 [INFO] [restartedMain] [110] HikariPool-4 - Starting...
+2023-06-30 00:46:56.199 [INFO] [restartedMain] [123] HikariPool-4 - Start completed.
+2023-06-30 00:46:56.205 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 00:46:56.210 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 00:46:56.251 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 00:46:56.252 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:46:56.379 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 00:46:56.409 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 00:46:56.449 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 00:46:56.461 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 00:46:56.472 [INFO] [restartedMain] [61] Started S456Application in 0.624 seconds (JVM running for 2066.662)
+2023-06-30 00:46:56.474 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 00:47:47.004 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 00:47:47.012 [INFO] [Thread-18] [173] Stopping service [Tomcat]
+2023-06-30 00:47:47.016 [INFO] [Thread-18] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:47:47.016 [INFO] [Thread-18] [350] HikariPool-4 - Shutdown initiated...
+2023-06-30 00:47:47.018 [INFO] [Thread-18] [352] HikariPool-4 - Shutdown completed.
+2023-06-30 00:47:47.074 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 00:47:47.074 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 00:47:47.230 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 00:47:47.249 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 18 ms. Found 5 JPA repository interfaces.
+2023-06-30 00:47:47.309 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 00:47:47.311 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 00:47:47.311 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 00:47:47.365 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 00:47:47.367 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 00:47:47.367 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 291 ms
+2023-06-30 00:47:47.401 [INFO] [restartedMain] [110] HikariPool-5 - Starting...
+2023-06-30 00:47:47.413 [INFO] [restartedMain] [123] HikariPool-5 - Start completed.
+2023-06-30 00:47:47.419 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 00:47:47.424 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 00:47:47.466 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 00:47:47.467 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:47:47.613 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 00:47:47.641 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 00:47:47.679 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 00:47:47.689 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 00:47:47.695 [INFO] [restartedMain] [61] Started S456Application in 0.639 seconds (JVM running for 2117.885)
+2023-06-30 00:47:47.697 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 00:50:03.523 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-30 00:50:03.531 [INFO] [Thread-23] [173] Stopping service [Tomcat]
+2023-06-30 00:50:03.535 [INFO] [Thread-23] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:50:03.535 [INFO] [Thread-23] [350] HikariPool-5 - Shutdown initiated...
+2023-06-30 00:50:03.537 [INFO] [Thread-23] [352] HikariPool-5 - Shutdown completed.
+2023-06-30 00:50:03.610 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 00:50:03.611 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 00:50:03.753 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 00:50:03.771 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2023-06-30 00:50:03.834 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 00:50:03.834 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 00:50:03.834 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 00:50:03.922 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 00:50:03.924 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 00:50:03.924 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 310 ms
+2023-06-30 00:50:03.953 [INFO] [restartedMain] [110] HikariPool-6 - Starting...
+2023-06-30 00:50:03.966 [INFO] [restartedMain] [123] HikariPool-6 - Start completed.
+2023-06-30 00:50:03.971 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 00:50:03.976 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 00:50:04.025 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 00:50:04.026 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:50:04.170 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 00:50:04.201 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 00:50:04.249 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 00:50:04.260 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 00:50:04.268 [INFO] [restartedMain] [61] Started S456Application in 0.68 seconds (JVM running for 2254.458)
+2023-06-30 00:50:04.269 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 00:50:21.608 [INFO] [File Watcher] [211] Restarting due to 1 class path change (0 additions, 0 deletions, 1 modification)
+2023-06-30 00:50:21.615 [INFO] [Thread-28] [173] Stopping service [Tomcat]
+2023-06-30 00:50:21.620 [INFO] [Thread-28] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:50:21.622 [INFO] [Thread-28] [350] HikariPool-6 - Shutdown initiated...
+2023-06-30 00:50:21.624 [INFO] [Thread-28] [352] HikariPool-6 - Shutdown completed.
+2023-06-30 00:50:21.682 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 00:50:21.682 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 00:50:21.826 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 00:50:21.842 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2023-06-30 00:50:21.897 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 00:50:21.897 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 00:50:21.898 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 00:50:21.944 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 00:50:21.945 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 00:50:21.945 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 261 ms
+2023-06-30 00:50:21.973 [INFO] [restartedMain] [110] HikariPool-7 - Starting...
+2023-06-30 00:50:21.984 [INFO] [restartedMain] [123] HikariPool-7 - Start completed.
+2023-06-30 00:50:21.989 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 00:50:21.994 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 00:50:22.027 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 00:50:22.027 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 00:50:22.148 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 00:50:22.171 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 00:50:22.203 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 00:50:22.213 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 00:50:22.218 [INFO] [restartedMain] [61] Started S456Application in 0.553 seconds (JVM running for 2272.408)
+2023-06-30 00:50:22.219 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 00:50:29.908 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 00:50:29.908 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 00:50:29.910 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 1 ms
+2023-06-30 01:17:55.987 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 01:17:55.996 [INFO] [Thread-33] [173] Stopping service [Tomcat]
+2023-06-30 01:17:55.996 [INFO] [Thread-33] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 01:17:55.999 [INFO] [Thread-33] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:17:56.000 [INFO] [Thread-33] [350] HikariPool-7 - Shutdown initiated...
+2023-06-30 01:17:56.003 [INFO] [Thread-33] [352] HikariPool-7 - Shutdown completed.
+2023-06-30 01:17:56.075 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 01:17:56.075 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 01:17:56.223 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 01:17:56.245 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 21 ms. Found 5 JPA repository interfaces.
+2023-06-30 01:17:56.310 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 01:17:56.311 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 01:17:56.311 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 01:17:56.360 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 01:17:56.362 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 01:17:56.362 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 286 ms
+2023-06-30 01:17:56.393 [INFO] [restartedMain] [110] HikariPool-8 - Starting...
+2023-06-30 01:17:56.406 [INFO] [restartedMain] [123] HikariPool-8 - Start completed.
+2023-06-30 01:17:56.411 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 01:17:56.415 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 01:17:56.453 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 01:17:56.453 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:17:56.597 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 01:17:56.626 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 01:17:56.668 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 01:17:56.679 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 01:17:56.684 [INFO] [restartedMain] [61] Started S456Application in 0.635 seconds (JVM running for 3926.874)
+2023-06-30 01:17:56.687 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 01:18:00.516 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 01:18:00.516 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 01:18:00.518 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 1 ms
+2023-06-30 01:22:04.090 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 01:22:04.099 [INFO] [Thread-38] [173] Stopping service [Tomcat]
+2023-06-30 01:22:04.100 [INFO] [Thread-38] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 01:22:04.103 [INFO] [Thread-38] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:22:04.104 [INFO] [Thread-38] [350] HikariPool-8 - Shutdown initiated...
+2023-06-30 01:22:04.107 [INFO] [Thread-38] [352] HikariPool-8 - Shutdown completed.
+2023-06-30 01:22:04.179 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 01:22:04.179 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 01:22:04.309 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 01:22:04.329 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2023-06-30 01:22:04.394 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 01:22:04.394 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 01:22:04.394 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 01:22:04.449 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 01:22:04.451 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 01:22:04.452 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 270 ms
+2023-06-30 01:22:04.501 [INFO] [restartedMain] [110] HikariPool-9 - Starting...
+2023-06-30 01:22:04.514 [INFO] [restartedMain] [123] HikariPool-9 - Start completed.
+2023-06-30 01:22:04.519 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 01:22:04.524 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 01:22:04.556 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 01:22:04.557 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:22:04.701 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 01:22:04.738 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 01:22:04.801 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 01:22:04.812 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 01:22:04.816 [INFO] [restartedMain] [61] Started S456Application in 0.654 seconds (JVM running for 4175.007)
+2023-06-30 01:22:04.818 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 01:22:09.342 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 01:22:09.342 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 01:22:09.344 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 1 ms
+2023-06-30 01:27:44.244 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 01:27:44.254 [INFO] [Thread-43] [173] Stopping service [Tomcat]
+2023-06-30 01:27:44.254 [INFO] [Thread-43] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 01:27:44.259 [INFO] [Thread-43] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:27:44.259 [INFO] [Thread-43] [350] HikariPool-9 - Shutdown initiated...
+2023-06-30 01:27:44.262 [INFO] [Thread-43] [352] HikariPool-9 - Shutdown completed.
+2023-06-30 01:27:44.324 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 01:27:44.324 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 01:27:44.464 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 01:27:44.483 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2023-06-30 01:27:44.547 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 01:27:44.547 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 01:27:44.547 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 01:27:44.599 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 01:27:44.601 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 01:27:44.601 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 275 ms
+2023-06-30 01:27:44.629 [INFO] [restartedMain] [110] HikariPool-10 - Starting...
+2023-06-30 01:27:44.640 [INFO] [restartedMain] [123] HikariPool-10 - Start completed.
+2023-06-30 01:27:44.646 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 01:27:44.650 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 01:27:44.680 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 01:27:44.680 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:27:44.816 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 01:27:44.848 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 01:27:44.891 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 01:27:44.907 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 01:27:44.914 [INFO] [restartedMain] [61] Started S456Application in 0.61 seconds (JVM running for 4515.104)
+2023-06-30 01:27:44.916 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 01:27:47.815 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 01:27:47.815 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 01:27:47.816 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 0 ms
+2023-06-30 01:30:33.866 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 01:30:33.875 [INFO] [Thread-48] [173] Stopping service [Tomcat]
+2023-06-30 01:30:33.875 [INFO] [Thread-48] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 01:30:33.881 [INFO] [Thread-48] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:30:33.881 [INFO] [Thread-48] [350] HikariPool-10 - Shutdown initiated...
+2023-06-30 01:30:33.884 [INFO] [Thread-48] [352] HikariPool-10 - Shutdown completed.
+2023-06-30 01:30:33.962 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 01:30:33.962 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 01:30:34.099 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 01:30:34.116 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 17 ms. Found 5 JPA repository interfaces.
+2023-06-30 01:30:34.179 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 01:30:34.180 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 01:30:34.180 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 01:30:34.233 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 01:30:34.234 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 01:30:34.235 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 272 ms
+2023-06-30 01:30:34.275 [INFO] [restartedMain] [110] HikariPool-11 - Starting...
+2023-06-30 01:30:34.287 [INFO] [restartedMain] [123] HikariPool-11 - Start completed.
+2023-06-30 01:30:34.292 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 01:30:34.297 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 01:30:34.331 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 01:30:34.332 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:30:34.453 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 01:30:34.487 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 01:30:34.526 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 01:30:34.539 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 01:30:34.545 [INFO] [restartedMain] [61] Started S456Application in 0.608 seconds (JVM running for 4684.736)
+2023-06-30 01:30:34.547 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 01:30:43.055 [INFO] [http-nio-8080-exec-2] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 01:30:43.055 [INFO] [http-nio-8080-exec-2] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 01:30:43.056 [INFO] [http-nio-8080-exec-2] [547] Completed initialization in 0 ms
+2023-06-30 01:31:28.667 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 01:31:28.676 [INFO] [Thread-53] [173] Stopping service [Tomcat]
+2023-06-30 01:31:28.676 [INFO] [Thread-53] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 01:31:28.679 [INFO] [Thread-53] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:31:28.680 [INFO] [Thread-53] [350] HikariPool-11 - Shutdown initiated...
+2023-06-30 01:31:28.683 [INFO] [Thread-53] [352] HikariPool-11 - Shutdown completed.
+2023-06-30 01:31:28.756 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 01:31:28.756 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 01:31:28.894 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 01:31:28.910 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 15 ms. Found 5 JPA repository interfaces.
+2023-06-30 01:31:28.965 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 01:31:28.966 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 01:31:28.966 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 01:31:29.016 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 01:31:29.018 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 01:31:29.018 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 261 ms
+2023-06-30 01:31:29.045 [INFO] [restartedMain] [110] HikariPool-12 - Starting...
+2023-06-30 01:31:29.056 [INFO] [restartedMain] [123] HikariPool-12 - Start completed.
+2023-06-30 01:31:29.062 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 01:31:29.066 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 01:31:29.092 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 01:31:29.093 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:31:29.198 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 01:31:29.225 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 01:31:29.258 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 01:31:29.268 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 01:31:29.272 [INFO] [restartedMain] [61] Started S456Application in 0.533 seconds (JVM running for 4739.463)
+2023-06-30 01:31:29.274 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 01:37:50.430 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 01:37:50.438 [INFO] [Thread-58] [173] Stopping service [Tomcat]
+2023-06-30 01:37:50.441 [INFO] [Thread-58] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:37:50.443 [INFO] [Thread-58] [350] HikariPool-12 - Shutdown initiated...
+2023-06-30 01:37:50.445 [INFO] [Thread-58] [352] HikariPool-12 - Shutdown completed.
+2023-06-30 01:37:50.505 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 01:37:50.505 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 01:37:50.646 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 01:37:50.665 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2023-06-30 01:37:50.724 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 01:37:50.725 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 01:37:50.725 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 01:37:50.769 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 01:37:50.770 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 01:37:50.770 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 263 ms
+2023-06-30 01:37:50.796 [INFO] [restartedMain] [110] HikariPool-13 - Starting...
+2023-06-30 01:37:50.807 [INFO] [restartedMain] [123] HikariPool-13 - Start completed.
+2023-06-30 01:37:50.812 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 01:37:50.816 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 01:37:50.846 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 01:37:50.846 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:37:50.988 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 01:37:51.013 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 01:37:51.047 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 01:37:51.056 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 01:37:51.061 [INFO] [restartedMain] [61] Started S456Application in 0.572 seconds (JVM running for 5121.252)
+2023-06-30 01:37:51.062 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 01:38:11.841 [INFO] [http-nio-8080-exec-2] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 01:38:11.841 [INFO] [http-nio-8080-exec-2] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 01:38:11.842 [INFO] [http-nio-8080-exec-2] [547] Completed initialization in 1 ms
+2023-06-30 01:38:58.544 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 01:38:58.552 [INFO] [Thread-63] [173] Stopping service [Tomcat]
+2023-06-30 01:38:58.553 [INFO] [Thread-63] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 01:38:58.556 [INFO] [Thread-63] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:38:58.556 [INFO] [Thread-63] [350] HikariPool-13 - Shutdown initiated...
+2023-06-30 01:38:58.559 [INFO] [Thread-63] [352] HikariPool-13 - Shutdown completed.
+2023-06-30 01:38:58.634 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 01:38:58.634 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 01:38:58.771 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 01:38:58.791 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 19 ms. Found 5 JPA repository interfaces.
+2023-06-30 01:38:58.844 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 01:38:58.845 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 01:38:58.846 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 01:38:58.887 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 01:38:58.888 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 01:38:58.888 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 252 ms
+2023-06-30 01:38:58.914 [INFO] [restartedMain] [110] HikariPool-14 - Starting...
+2023-06-30 01:38:58.926 [INFO] [restartedMain] [123] HikariPool-14 - Start completed.
+2023-06-30 01:38:58.931 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 01:38:58.936 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 01:38:58.966 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 01:38:58.967 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:38:59.068 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 01:38:59.093 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 01:38:59.128 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 01:38:59.139 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 01:38:59.143 [INFO] [restartedMain] [61] Started S456Application in 0.525 seconds (JVM running for 5189.333)
+2023-06-30 01:38:59.145 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 01:39:05.624 [INFO] [http-nio-8080-exec-1] [173] Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-30 01:39:05.624 [INFO] [http-nio-8080-exec-1] [525] Initializing Servlet 'dispatcherServlet'
+2023-06-30 01:39:05.625 [INFO] [http-nio-8080-exec-1] [547] Completed initialization in 0 ms
+2023-06-30 01:40:21.490 [INFO] [File Watcher] [211] Restarting due to 2 class path changes (0 additions, 0 deletions, 2 modifications)
+2023-06-30 01:40:21.499 [INFO] [Thread-68] [173] Stopping service [Tomcat]
+2023-06-30 01:40:21.499 [INFO] [Thread-68] [173] Destroying Spring FrameworkServlet 'dispatcherServlet'
+2023-06-30 01:40:21.502 [INFO] [Thread-68] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:40:21.503 [INFO] [Thread-68] [350] HikariPool-14 - Shutdown initiated...
+2023-06-30 01:40:21.505 [INFO] [Thread-68] [352] HikariPool-14 - Shutdown completed.
+2023-06-30 01:40:21.581 [INFO] [restartedMain] [55] Starting S456Application using Java 17.0.7 on LAPTOP-64JHNQV9 with PID 12672 (C:\sts4-workspace\s456\target\classes started by Tibme_A40J in C:\sts4-workspace\s456)
+2023-06-30 01:40:21.581 [INFO] [restartedMain] [631] No active profile set, falling back to 1 default profile: "default"
+2023-06-30 01:40:21.717 [INFO] [restartedMain] [132] Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-06-30 01:40:21.734 [INFO] [restartedMain] [201] Finished Spring Data repository scanning in 16 ms. Found 5 JPA repository interfaces.
+2023-06-30 01:40:21.788 [INFO] [restartedMain] [108] Tomcat initialized with port(s): 8080 (http)
+2023-06-30 01:40:21.788 [INFO] [restartedMain] [173] Starting service [Tomcat]
+2023-06-30 01:40:21.788 [INFO] [restartedMain] [173] Starting Servlet engine: [Apache Tomcat/9.0.75]
+2023-06-30 01:40:21.829 [INFO] [restartedMain] [173] At least one JAR was scanned for TLDs yet contained no TLDs. Enable debug logging for this logger for a complete list of JARs that were scanned but no TLDs were found in them. Skipping unneeded JARs during scanning can improve startup time and JSP compilation time.
+2023-06-30 01:40:21.830 [INFO] [restartedMain] [173] Initializing Spring embedded WebApplicationContext
+2023-06-30 01:40:21.830 [INFO] [restartedMain] [292] Root WebApplicationContext: initialization completed in 248 ms
+2023-06-30 01:40:21.856 [INFO] [restartedMain] [110] HikariPool-15 - Starting...
+2023-06-30 01:40:21.867 [INFO] [restartedMain] [123] HikariPool-15 - Start completed.
+2023-06-30 01:40:21.873 [INFO] [restartedMain] [31] HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-06-30 01:40:21.876 [INFO] [restartedMain] [175] HHH000400: Using dialect: org.hibernate.dialect.MySQLDialect
+2023-06-30 01:40:21.910 [INFO] [restartedMain] [52] HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-06-30 01:40:21.911 [INFO] [restartedMain] [437] Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:40:22.015 [WARN] [restartedMain] [223] spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-06-30 01:40:22.044 [INFO] [restartedMain] [58] Adding welcome page: class path resource [static/index.html]
+2023-06-30 01:40:22.076 [INFO] [restartedMain] [59] LiveReload server is running on port 35729
+2023-06-30 01:40:22.085 [INFO] [restartedMain] [220] Tomcat started on port(s): 8080 (http) with context path '/Jamigo'
+2023-06-30 01:40:22.090 [INFO] [restartedMain] [61] Started S456Application in 0.527 seconds (JVM running for 5272.281)
+2023-06-30 01:40:22.092 [INFO] [restartedMain] [63] Condition evaluation unchanged
+2023-06-30 01:40:35.991 [INFO] [RMI TCP Connection(147)-127.0.0.1] [159] Application shutdown requested.
+2023-06-30 01:40:36.000 [INFO] [RMI TCP Connection(147)-127.0.0.1] [173] Stopping service [Tomcat]
+2023-06-30 01:40:36.004 [INFO] [RMI TCP Connection(147)-127.0.0.1] [651] Closing JPA EntityManagerFactory for persistence unit 'default'
+2023-06-30 01:40:36.004 [INFO] [RMI TCP Connection(147)-127.0.0.1] [350] HikariPool-15 - Shutdown initiated...
+2023-06-30 01:40:36.007 [INFO] [RMI TCP Connection(147)-127.0.0.1] [352] HikariPool-15 - Shutdown completed.

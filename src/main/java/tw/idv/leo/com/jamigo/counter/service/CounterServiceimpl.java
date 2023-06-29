@@ -77,16 +77,41 @@ public class CounterServiceimpl implements CounterService {
 	}
 
 	@Override
-	public String forget(Counter counter) {
-		Counter counterData = counterRepository.findByCounterEmail(counter.getCounterEmail());
-		if (counterData == null) {
+	public void forget(Counter counter) {
+		Optional<Counter> counterData = counterRepository.findByCounterEmail(counter.getCounterEmail());
+		if (counterData.isEmpty()) {
 			System.out.println("找不到櫃位資訊，發信失敗");
-			return "找不到櫃位";
+			throw new NoSuchElementException("找不到櫃位");
 	
+		}else {
+		
+			String result = "";
+			
+			int count = 0;
+			
+			while (count < 8) {
+				// 因為 'z' 的 ASCII 碼值為 122，所以生成 1~122 的亂數
+				int randNum = (int)(Math.random() * 122) + 1;
+				
+				// 如果亂數介在"數字"，則新增到驗證碼字串中
+				if (randNum >= '0' && randNum <= '9') {
+					result += (char)randNum;
+					count++;
+				}
+				// 如果亂數介在"大寫字母"，則新增到驗證碼字串中
+				else if (randNum >= 'A' && randNum <= 'Z') {
+					result += (char)randNum;
+					count++;
+				}
+				// 如果亂數介在"小寫字母"，則新增到驗證碼字串中
+				else if (randNum >= 'a' && randNum <= 'z') {
+					result += (char)randNum;
+					count++;
+				}
+			}
+		Counter	counterData2 = counterData.orElse(null);	
+		counterData2.setCounterPassword(result);
+		sendEmail4CounterForget.sendMail(counterData2);
 		}
-
-		sendEmail4CounterForget.sendMail(counterData);
-		return "已發信";
-
 	}
 }

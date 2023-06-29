@@ -37,8 +37,17 @@ public class SendEmail4CounterForget {
 			message.setFrom(new InternetAddress(myGmail));
 			message.setRecipients(Message.RecipientType.TO, InternetAddress.parse(email));
 			message.setSubject("Jamigo櫃位忘記密碼");// 標題
-			message.setText("這是您的密碼 ：" + pw );// 內容
+			// 設置郵件的字符編碼為 UTF-8
+//			message.setHeader("Content-Type", "text/html; charset=UTF-8");
+//			String htmlContent = "<h1>暫時密碼</h1>";
+//	        htmlContent += "<p>密碼：<strong>" + pw + "</strong></p>";
+	        message.setText("這是您的暫時密碼 ：" + pw);//內容
+	        message.setText("建議您登入後立即更新密碼");
 
+			// 設定郵件內容的類型為 HTML
+//			message.setContent(htmlContent, "text/html");
+
+			
 			Transport.send(message);
 //			mailSender.send(message);
 			System.out.println("傳送成功!");

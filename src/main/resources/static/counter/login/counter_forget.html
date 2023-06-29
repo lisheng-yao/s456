@@ -65,7 +65,7 @@
               <div class="content-input-field">
                 <input
                   name="counterAccount"
-                  id="counterAccount"
+                  id="counterMail"
                   type="email"
                   placeholder="請輸入信箱"
                   style="border: 1px solid"
@@ -75,7 +75,7 @@
             </div>
 
             <div class="content-input-field">
-              <button type="button" class="btn" id="btn1" onclick="login()">
+              <button type="button" class="btn" id="btn1" onclick="sendMail()">
                 發送驗證信
               </button>
               <p
@@ -153,16 +153,14 @@
 
   <!---------------------------------- 送出登入請求 --------------------------------->
   <script>
-    function login() {
-      const name = document.getElementById("counterAccount").value;
-      const password = document.getElementById("counterPassword").value;
+    function sendMail() {
+      const mail = document.getElementById("counterMail").value;
 
       let counter = {
-        counterAccount: name,
-        counterPassword: password,
+        counterEmail: mail,
       };
 
-      fetch("/Jamigo/login", {
+      fetch("/Jamigo/counterMail", {
         method: "Post",
         headers: {
           "Content-Type": "application/json",
@@ -170,13 +168,22 @@
         body: JSON.stringify(counter),
       })
         .then((response) => {
-          if (response.ok)
-            window.location.href = "/Jamigo/counter/counter_data.html";
-          else {
-            document.getElementById("login-error").style.display = "block";
+          if (response.ok) {
+            Swal.fire({
+              position: "center",
+              icon: "warning",
+              title: "已將暫時密碼寄到您的信箱!",
+              text: "建議您立即更新密碼!",
+              showConfirmButton: false,
+              footer:
+                '<a href="counter_login.html" ><p style="border: 5px solid rgb(126, 126, 199); border-radius: 10px ;color : white ; background-color: rgb(126, 126, 199)">立即前往登入</p></a>',
+            });
+          } else {
             Swal.fire({
               icon: "error",
-              title: "帳號密碼有誤，請重確認",
+              title: "查無此櫃位信箱!",
+              text: "請重新確認或連繫平台人員",
+              showConfirmButton: true,
             });
           }
         })
@@ -188,7 +195,7 @@
     function checkEnter(event) {
       if (event.keyCode === 13) {
         // 觸發登入按鈕的點擊事件
-        login();
+        sendMail();
       }
     }
   </script>
