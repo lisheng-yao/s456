@@ -1,6 +1,5 @@
 package tw.idv.leo.com.jamigo.counter.service;
 
-
 import java.io.IOException;
 import java.util.NoSuchElementException;
 import java.util.Optional;
@@ -9,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import tw.idv.leo.com.jamigo.counter.contrller.SendEmail4CounterForget;
 import tw.idv.leo.com.jamigo.counter.dao.CounterRepository;
 import tw.idv.leo.com.jamigo.counter.model.Counter;
 
@@ -17,6 +17,8 @@ public class CounterServiceimpl implements CounterService {
 
 	@Autowired
 	private CounterRepository counterRepository;
+	@Autowired
+	private SendEmail4CounterForget sendEmail4CounterForget;
 
 	@Override
 	public void updateCounter(Counter data) {
@@ -25,20 +27,19 @@ public class CounterServiceimpl implements CounterService {
 
 		// 更新存在的pk
 		var counter2 = counter.orElse(null);
-			counter2.setCounterName(data.getCounterName());
+		counter2.setCounterName(data.getCounterName());
 //		    counter2.setCutPercent(data.getCutPercent());
 //		    counter2.setCounterStat(data.getCounterStat());
-		    counter2.setCounterGui(data.getCounterGui());
-		    counter2.setCounterFloor(data.getCounterFloor());
-		    counter2.setCounterTel(data.getCounterTel());
-		    counter2.setCounterPoc(data.getCounterPoc());
-		    counter2.setCounterPocPhone(data.getCounterPocPhone());
-		    counter2.setCounterPocAddress(data.getCounterPocAddress());
-		    counter2.setCounterEmail(data.getCounterEmail());
-		    counter2.setCounterBankAccount(data.getCounterBankAccount());
-		    counter2.setCounterAbout(data.getCounterAbout());
-		    counter2.setCounterPassword(data.getCounterPassword());
-		    
+		counter2.setCounterGui(data.getCounterGui());
+		counter2.setCounterFloor(data.getCounterFloor());
+		counter2.setCounterTel(data.getCounterTel());
+		counter2.setCounterPoc(data.getCounterPoc());
+		counter2.setCounterPocPhone(data.getCounterPocPhone());
+		counter2.setCounterPocAddress(data.getCounterPocAddress());
+		counter2.setCounterEmail(data.getCounterEmail());
+		counter2.setCounterBankAccount(data.getCounterBankAccount());
+		counter2.setCounterAbout(data.getCounterAbout());
+		counter2.setCounterPassword(data.getCounterPassword());
 
 		counterRepository.save(counter2);
 
@@ -53,10 +54,8 @@ public class CounterServiceimpl implements CounterService {
 
 	@Override
 	public Counter findByAcc(String counterAccount, String counterPassword) {
-		
+
 		return counterRepository.findByCounterAccountAndCounterPassword(counterAccount, counterPassword);
-		
-		
 
 	}
 
@@ -64,19 +63,30 @@ public class CounterServiceimpl implements CounterService {
 	public void updateCounterPic(Integer counterNo, MultipartFile counterPic) throws IOException {
 		Optional<Counter> counterOptional = counterRepository.findById(counterNo);
 
-	    if (counterOptional.isEmpty()) {
-	        throw new NoSuchElementException("找不到櫃位");
-	    }
+		if (counterOptional.isEmpty()) {
+			throw new NoSuchElementException("找不到櫃位");
+		}
 
-	    Counter counter = counterOptional.get();
+		Counter counter = counterOptional.get();
 
-	    // 將 MultipartFile 轉換為 byte[]
-	    byte[] counterPicBytes = counterPic.getBytes();
-	    counter.setCounterPic(counterPicBytes);
+		// 將 MultipartFile 轉換為 byte[]
+		byte[] counterPicBytes = counterPic.getBytes();
+		counter.setCounterPic(counterPicBytes);
 
-	    counterRepository.save(counter);
-	}
-		
+		counterRepository.save(counter);
 	}
 
+	@Override
+	public String forget(Counter counter) {
+		Counter counterData = counterRepository.findByCounterEmail(counter.getCounterEmail());
+		if (counterData == null) {
+			System.out.println("找不到櫃位資訊，發信失敗");
+			return "找不到櫃位";
+	
+		}
 
+		sendEmail4CounterForget.sendMail(counterData);
+		return "已發信";
+
+	}
+}

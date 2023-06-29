@@ -54,10 +54,10 @@
             class="text-center icon"
             style="margin-bottom: -1em; padding-top: 20px"
           >
-            <i class="fa-solid fa-key" style="font-size: 30px"></i>
+            <i class="fa-solid fa-envelope" style="font-size: 30px"></i>
             <!-- 改 -->
             <p style="text-align: center; font-size: 30px; margin-top: 10px">
-              櫃位後台登入
+              請輸入櫃位信箱
             </p>
           </div>
           <div class="content-bottom">
@@ -66,28 +66,17 @@
                 <input
                   name="counterAccount"
                   id="counterAccount"
-                  type="text"
-                  placeholder="請輸入帳號"
+                  type="email"
+                  placeholder="請輸入信箱"
                   style="border: 1px solid"
                   onkeydown="checkEnter(event)"
                 />
               </div>
             </div>
-            <div class="field-group">
-              <div class="content-input-field">
-                <input
-                  name="counterPassword"
-                  id="counterPassword"
-                  type="Password"
-                  placeholder="請輸入密碼"
-                  style="border: 1px solid"
-                  onkeydown="checkEnter(event)"
-                />
-              </div>
-            </div>
+
             <div class="content-input-field">
               <button type="button" class="btn" id="btn1" onclick="login()">
-                登入
+                發送驗證信
               </button>
               <p
                 id="login-error"
@@ -104,10 +93,10 @@
             <ul class="list-login">
               <li>
                 <a
-                  href="counter_forget.html"
+                  href="counter_login.html"
                   class="text-right"
                   style="margin-left: 100px"
-                  >忘記密碼?</a
+                  >回登入頁</a
                 >
               </li>
               <li class="clearfix"></li>
@@ -174,21 +163,20 @@
       };
 
       fetch("/Jamigo/login", {
-        method: "POST",
+        method: "Post",
         headers: {
           "Content-Type": "application/json",
         },
         body: JSON.stringify(counter),
       })
         .then((response) => {
-          if (response.ok) {
-            localStorage.setItem("counterAccount", name);
-            // window.location.href = "/Jamigo/counter/counter_data.html";
-          } else {
+          if (response.ok)
+            window.location.href = "/Jamigo/counter/counter_data.html";
+          else {
             document.getElementById("login-error").style.display = "block";
             Swal.fire({
               icon: "error",
-              title: "帳號密碼有誤，請重新確認",
+              title: "帳號密碼有誤，請重確認",
             });
           }
         })

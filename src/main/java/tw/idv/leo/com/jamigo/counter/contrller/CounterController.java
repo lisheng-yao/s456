@@ -19,6 +19,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+
 import tw.idv.leo.com.jamigo.counter.dao.CounterRepository;
 import tw.idv.leo.com.jamigo.counter.model.Counter;
 import tw.idv.leo.com.jamigo.counter.service.CounterService;
@@ -30,6 +31,9 @@ public class CounterController {
 	private CounterRepository counterRepository;
 	@Autowired
 	private CounterService counterService;
+
+	
+	
 
 	// ========================== 查櫃位資料 ===========================
 
@@ -104,6 +108,14 @@ public class CounterController {
 			return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).body("圖片更新失敗");
 		}
 	}
+	// =========================== 櫃位忘記密碼 ===================================
+	
+	@PostMapping("/counterMail")
+    public void forgetPass(@RequestBody Counter counter) {
+		counterService.forget(counter);
+
+    }
+	
 
 	// ========================== 登出 ==========================
 
