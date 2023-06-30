@@ -41,8 +41,7 @@ public class SendEmail4CounterForget {
 //			message.setHeader("Content-Type", "text/html; charset=UTF-8");
 //			String htmlContent = "<h1>暫時密碼</h1>";
 //	        htmlContent += "<p>密碼：<strong>" + pw + "</strong></p>";
-	        message.setText("這是您的暫時密碼 ：" + pw);//內容
-	        message.setText("建議您登入後立即更新密碼");
+	        message.setText(counter.getCounterName() + " 您好!"+ "\n\n" +"這是您的暫時密碼 ：" + pw);//內容
 
 			// 設定郵件內容的類型為 HTML
 //			message.setContent(htmlContent, "text/html");

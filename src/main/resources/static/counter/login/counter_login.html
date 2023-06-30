@@ -183,7 +183,7 @@
         .then((response) => {
           if (response.ok) {
             localStorage.setItem("counterAccount", name);
-            // window.location.href = "/Jamigo/counter/counter_data.html";
+            window.location.href = "/Jamigo/counter/counter_data.html";
           } else {
             document.getElementById("login-error").style.display = "block";
             Swal.fire({
